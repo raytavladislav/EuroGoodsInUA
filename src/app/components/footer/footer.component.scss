@@ -1,0 +1,16 @@
+footer{
+    text-align: center;
+    height: 60px;
+    background: lightgreen;
+    color: lightyellow;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #cc0000 0%, #800000 100%);
+}
+
+
+:host{
+    flex: 0 0 auto;
+}
