@@ -3,12 +3,18 @@
 
 
 body {
+    height: 100%;
+
     margin: 0;
     padding: 0;
-    height: 100%;
+
+    background: linear-gradient(to bottom, #800000 10%, #808080 77%);
+    
     font-family: 'Comfortaa', cursive;
 }
 
 html {
     height: 100%;
 }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

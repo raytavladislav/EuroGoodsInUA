@@ -2,10 +2,56 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Navbar</a>
+    <!-- <a class="navbar-brand" href="#"></a> -->
+    <!-- <div class="dropDown">
+      <button class="mainMenuBtn">
+        <span class="material-icons localMallIcon">
+            local_mall
+        </span>
+        <b>Каталог товарів</b></button>
+      <div class="dropDownChild">
+        <a href="#">Підрозділ 1</a>
+        <a href="#">Підрозділ 2</a>
+        <a href="#">Підрозділ 4</a>
+        <a href="#">Підрозділ 5</a>
+        <a href="#">Підрозділ 6</a>
+        <a href="#">Підрозділ 7</a>
+        <a href="#">Підрозділ 8</a>
+        <a href="#">Підрозділ 9</a>
+        <a href="#">Підрозділ 10</a>
+
+      </div>
+    </div> -->
+
+    
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-8">
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+            Каталог товарів
+          </a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Грилі</a>
+            <a class="dropdown-item" href="#">Блендери</a>
+            <a class="dropdown-item" href="#">Тостери та вафельниці</a>
+            <a class="dropdown-item" href="#">Міксери</a>
+            <a class="dropdown-item" href="#">Принтери</a>
+            <a class="dropdown-item" href="#">Навушники</a>
+            <a class="dropdown-item" href="#">Клавіатури</a>
+            <a class="dropdown-item" href="#">Комп'ютерні миші</a>
+            <a class="dropdown-item" href="#">Колонки</a>
+          </div>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="#">Головна</a>
         </li>
@@ -19,9 +65,9 @@
           <a class="nav-link" href="#">Контакти</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      <form class="form-inline my-2 my-lg-0  col-md-4">
+        <input class="form-control mr-sm-2" type="search" placeholder="Пошук товарів" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Пошук</button>
       </form>
     </div>
   </nav>
