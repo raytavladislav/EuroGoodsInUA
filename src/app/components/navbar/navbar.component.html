@@ -31,7 +31,6 @@
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-8">
         <li ngbDropdown class="nav-item dropdown">
           <a ngbDropdownToggle class="nav-link dropdown-toggle"
-            href="#"
             id="navbarDropdown"
             role="button"
             data-toggle="dropdown"
@@ -40,29 +39,29 @@
             Каталог товарів
           </a>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Грилі</a>
-            <a class="dropdown-item" href="#">Блендери</a>
-            <a class="dropdown-item" href="#">Тостери та вафельниці</a>
-            <a class="dropdown-item" href="#">Міксери</a>
-            <a class="dropdown-item" href="#">Принтери</a>
-            <a class="dropdown-item" href="#">Навушники</a>
-            <a class="dropdown-item" href="#">Клавіатури</a>
-            <a class="dropdown-item" href="#">Комп'ютерні миші</a>
-            <a class="dropdown-item" href="#">Колонки</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Грилі</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Блендери</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Тостери та вафельниці</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Міксери</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Принтери</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Навушники</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Клавіатури</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Комп'ютерні миші</a>
+            <a routerLinkActive="active" class="dropdown-item" routerLinkActive="">Колонки</a>
           </div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Головна</a>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="products">Головна</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Доставка та оплата</a>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="delivery-and-payments">Доставка та оплата</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Про компанію</a>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="about">Про компанію</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Контакти</a>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="contacts">Контакти</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0  col-md-4">

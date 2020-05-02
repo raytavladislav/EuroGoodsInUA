@@ -11,6 +11,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { CarouselComponent } from './pages/products/carousel/carousel.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { DeliveryAndPaymentComponent } from './pages/delivery-and-payment/delivery-and-payment.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 
 @NgModule({
@@ -20,10 +25,15 @@ import { CarouselComponent } from './pages/products/carousel/carousel.component'
     FooterComponent,
     NavbarComponent,
     ProductsComponent,
-    CarouselComponent
+    CarouselComponent,
+    PageNotFoundComponent,
+    DeliveryAndPaymentComponent,
+    AboutComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
     CarouselModule.forRoot()
