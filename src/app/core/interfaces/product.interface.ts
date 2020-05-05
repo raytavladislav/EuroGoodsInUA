@@ -6,5 +6,3 @@ export class Product {
     price: number;
     inStock: boolean;
 }
-
-// export { Product };

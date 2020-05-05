@@ -1,0 +1,317 @@
+{
+"grills": [
+  {
+    "id": 1,
+    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+    "title": "Гриль ESPERANZA EKG006",
+    "description": "Покриття поверхні смаження: Кераміка",
+    "price": 450,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+    "title": "Гриль",
+    "description": "Покриття: Кераміка",
+    "price": 300,
+    "inStock": false
+  },
+  {
+    "id": 3,
+    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+    "title": "Гриль111",
+    "description": "Покриття: Кераміка111",
+    "price": 500,
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+    "title": "Гриль1123311",
+    "description": "Покриття: Кер21313а111",
+    "price": 700,
+    "inStock": true
+  }
+],
+
+"blenders": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ],
+
+  "headphones": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ],
+
+  "keyboards": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ],
+
+  "loudSpeakers": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ],
+
+  "mixers": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ],
+
+  "mouses": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ],
+
+  "printers": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ],
+
+  "toasters": [
+    {
+      "id": 1,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль ESPERANZA EKG006",
+      "description": "Покриття поверхні смаження: Кераміка",
+      "price": 450,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль",
+      "description": "Покриття: Кераміка",
+      "price": 300,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль111",
+      "description": "Покриття: Кераміка111",
+      "price": 500,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
+      "title": "Гриль1123311",
+      "description": "Покриття: Кер21313а111",
+      "price": 700,
+      "inStock": true
+    }
+  ]
+
+}

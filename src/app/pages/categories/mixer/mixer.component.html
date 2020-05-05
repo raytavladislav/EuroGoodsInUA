@@ -1,0 +1,24 @@
+<div class="container">
+    <div *ngIf="mixerList" class="row row-cols-sm-2 row-cols-md-3 w-100">
+        <div class="col mb-4" *ngFor="let item of mixerList">
+            <div class="card h-100">
+                <img src={{item.picture}}
+                     class="card-img-top"
+                     alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                    <p  class="card-text">{{item.price}} грн.</p>
+                    <a  class="btn btn-primary"
+                        [class.pointerIvents]="!item.inStock"
+                        routerLink={{item.id}}
+                        routerLinkActive="router-link-active">{{(item.inStock) ? 'Детальніше' : 'Немає в наявності'}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="!mixerList" class="text-center">
+        Інформація відсутня
+    </div>
+</div>

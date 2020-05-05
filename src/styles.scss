@@ -1,5 +1,8 @@
 /* Bootstrap */
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
 html {
     height: 100%;
 }
@@ -13,13 +16,5 @@ body {
     background: linear-gradient(to bottom, #800000 10%, #808080 77%);
     
     font-family: 'Comfortaa', cursive;
-    background-size: 100%;
     background-size: cover;
 }
-
-
-html {
-    height: 100%;
-}
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
