@@ -9,20 +9,20 @@ import { ProductService } from 'src/app/core/services/product.service';
   styleUrls: ['./mouse.component.css']
 })
 export class MouseComponent implements OnInit {
-  mixerList: Array<Product>
+  mouseList: Array<Product>
 
   constructor(
       private productService: ProductService
     ) { }
 
   ngOnInit(): void {
-    this.getMixers();
+    this.getMouses();
   }
 
-  getMixers(): void {
-    this.productService.getMixers()
+  getMouses(): void {
+    this.productService.getMouses()
       .subscribe(data => {
-        this.mixerList = data;
+        this.mouseList = data;
         },
         error => {
           console.error(error);

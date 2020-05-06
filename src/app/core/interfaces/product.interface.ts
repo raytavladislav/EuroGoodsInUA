@@ -3,6 +3,7 @@ export class Product {
     picture: string;
     title: string;
     description: string;
+    details: string;
     price: number;
     inStock: boolean;
 }

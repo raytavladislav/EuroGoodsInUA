@@ -2,34 +2,38 @@
 "grills": [
   {
     "id": 1,
-    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-    "title": "Гриль ESPERANZA EKG006",
-    "description": "Покриття поверхні смаження: Кераміка",
-    "price": 450,
+    "picture": "assets/images/products/grills/grill1.jpeg",
+    "title": "Multi Grill Cooks SD002",
+    "description": "Виробник: Китай",
+    "details": "Нагрівальні пластини мають антипригарне покриття; 3 пристрої в одному; Aнтипригарне покриття; Кришка автоматично і надійно фіксується;",
+    "price": 490,
     "inStock": true
   },
   {
     "id": 2,
-    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-    "title": "Гриль",
-    "description": "Покриття: Кераміка",
-    "price": 300,
-    "inStock": false
-  },
-  {
-    "id": 3,
-    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-    "title": "Гриль111",
-    "description": "Покриття: Кераміка111",
-    "price": 500,
+    "picture": "assets/images/products/grills/grill2.jpeg",
+    "title": "Panini Grill",
+    "description": "Виробник: Італія",
+    "details": "Справжня знахідка для любителів смачно поїсти! Panini Grill - це простий пристрій, що допоможе вам готувати апетитні хрусткі гарячі бутерброди з різноманітними начинками як на грилі. Причому - з мінімальними витратами часу і сил! Panini Grill щільно притискає скибочки хліба один до одного, не даючи начинці витекти назовні. Тому ви можете одночасно готувати кілька страв, наприклад, сирний сендвіч з овочами, бутерброд з джемом, вафлі-гриль і навіть омлет і оладки! І все це - без краплі жиру! антипригарне покриття. Можна готувати кілька страв одночасно",
+    "price": 330,
     "inStock": true
   },
   {
+    "id": 3,
+    "picture": "assets/images/products/grills/grill3.jpeg",
+    "title": "Rainberg RB-5401 1500W",
+    "description": "Виробник: Німеччина",
+    "details": "",
+    "price": 765,
+    "inStock": false
+  },
+  {
     "id": 4,
-    "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-    "title": "Гриль1123311",
-    "description": "Покриття: Кер21313а111",
-    "price": 700,
+    "picture": "assets/images/products/grills/grill4.jpg",
+    "title": "Tefal GC305012",
+    "description": "Виробник: Китай",
+    "details": "",
+    "price": 545,
     "inStock": true
   }
 ],
@@ -37,34 +41,38 @@
 "blenders": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
-      "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "picture": "assets/images/products/blenders/blender1.png",
+      "title": "BRAUN MQ 3145 APERITIVE",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 1699,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
+      "picture": "assets/images/products/blenders/blender2.jpg",
+      "title": "PHILIPS HR2652/90",
+      "description": "Виробник: Німеччина",
+      "details": "",
+      "price": 1999,
       "inStock": false
     },
     {
       "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/blenders/blender3.jpg",
+      "title": "BOSCH MSM26500",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 1399,
       "inStock": true
     },
     {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/blenders/blender4.jpg",
+      "title": "BOSCH MSM14500",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 970,
       "inStock": true
     }
   ],
@@ -72,34 +80,38 @@
   "headphones": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
-      "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "picture": "assets/images/products/headphones/headphone1.jpg",
+      "title": "Tracer DRAGON Blue",
+      "description": "Дротові",
+      "details": "",
+      "price": 299,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
+      "picture": "assets/images/products/headphones/headphone2.jpg",
+      "title": "Еracer EXPERT Red",
+      "description": "Дротові",
+      "details": "",
+      "price":249,
       "inStock": false
     },
     {
       "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/headphones/headphone3.jpg",
+      "title": "Tracer Outlaw",
+      "description": "Дротові",
+      "details": "",
+      "price": 1079,
       "inStock": true
     },
     {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/headphones/headphone4.jpg",
+      "title": "Panasonic RP-HF400BGC-K",
+      "description": "Бездротові",
+      "details": "",
+      "price": 999,
       "inStock": true
     }
   ],
@@ -107,34 +119,38 @@
   "keyboards": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
+      "picture": "assets/images/products/keyboards/keyboard1.jpg",
+      "title": "Еracer HellWay X",
       "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "details": "Дротова. Механічна",
+      "price": 449,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
-      "inStock": false
-    },
-    {
-      "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/keyboards/keyboard2.jpg",
+      "title": "A4Tech KV-300H",
+      "description": "Дротова",
+      "details": "",
+      "price": 599,
       "inStock": true
     },
     {
+      "id": 3,
+      "picture": "assets/images/products/keyboards/keyboard3.jpg",
+      "title": "Bloody B314",
+      "description": "Дротова. Механічна",
+      "details": "",
+      "price": 699,
+      "inStock": false
+    },
+    {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/keyboards/keyboard4.jpg",
+      "title": "Tracer Stinger 87",
+      "description": "Дротова. Механічна",
+      "details": "",
+      "price": 699,
       "inStock": true
     }
   ],
@@ -142,34 +158,38 @@
   "loudSpeakers": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
-      "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "picture": "assets/images/products/loudSpeakers/loudSpeaker1.jpg",
+      "title": "Tracer Radius BT",
+      "description": "Bluetooth-з'єднання",
+      "details": "",
+      "price": 399,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
-      "inStock": false
+      "picture": "assets/images/products/loudSpeakers/loudSpeaker2.jpg",
+      "title": "Tracer Rave BT",
+      "description": "Bluetooth-з'єднання",
+      "details": "",
+      "price": 1799,
+      "inStock": true
     },
     {
       "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/loudSpeakers/loudSpeaker3.jpg",
+      "title": "Tracer Mark BT",
+      "description": "USB-з'єднання",
+      "details": "",
+      "price": 499,
       "inStock": true
     },
     {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/loudSpeakers/loudSpeaker4.jpg",
+      "title": "Tracer Stream BT",
+      "description": "Bluetooth-з'єднання",
+      "details": "",
+      "price": 149,
       "inStock": true
     }
   ],
@@ -177,34 +197,38 @@
   "mixers": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
-      "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "picture": "assets/images/products/mixers/mixer1.jpg",
+      "title": "PHILIPS HR3740/00",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 999,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
+      "picture": "assets/images/products/mixers/mixer2.jpg",
+      "title": "Bosch MFQ40303",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 579,
       "inStock": false
     },
     {
       "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/mixers/mixer3.jpg",
+      "title": "BOSCH MFQ4020",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 1399,
       "inStock": true
     },
     {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/mixers/mixer4.jpg",
+      "title": "ELECTROLUX ESM3300",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 1899,
       "inStock": true
     }
   ],
@@ -212,34 +236,38 @@
   "mouses": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
-      "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "picture": "assets/images/products/mouses/mouse1.jpg",
+      "title": "Tracer Gamezone Frenzy",
+      "description": "Провідна",
+      "details": "",
+      "price": 699,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
-      "inStock": false
-    },
-    {
-      "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/mouses/mouse2.jpg",
+      "title": "A4Tech G7-630N",
+      "description": "Провідна",
+      "details": "",
+      "price": 399,
       "inStock": true
     },
     {
+      "id": 3,
+      "picture": "assets/images/products/mouses/mouse3.jpg",
+      "title": "Bloody V8M",
+      "description": "Провідна",
+      "details": "",
+      "price": 500,
+      "inStock": false
+    },
+    {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/mouses/mouse4.jpg",
+      "title": "Tracer JOY RF",
+      "description": "Безпровідна",
+      "details": "",
+      "price": 149,
       "inStock": true
     }
   ],
@@ -247,34 +275,38 @@
   "printers": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
-      "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "picture": "assets/images/products/printers/printer1.jpg",
+      "title": "HP M254NW",
+      "description": "Лазерний. Кольоровий друк",
+      "details": "",
+      "price": 4999,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
+      "picture": "assets/images/products/printers/printer2.jpg",
+      "title": "EPSON WF-3720DWF",
+      "description": "Лазерний. Чорно-білий друк",
+      "details": "",
+      "price": 8999,
       "inStock": false
     },
     {
       "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/printers/printer3.jpg",
+      "title": "CANON I-SENSYS LBP113W",
+      "description": "Лазерний. Чорно-білий друк",
+      "details": "",
+      "price": 4899,
       "inStock": true
     },
     {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/printers/printer4.jpg",
+      "title": "EPSON WF-3720DWF",
+      "description": "Струменевий. Кольоровий друк",
+      "details": "",
+      "price": 6199,
       "inStock": true
     }
   ],
@@ -282,34 +314,38 @@
   "toasters": [
     {
       "id": 1,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль ESPERANZA EKG006",
-      "description": "Покриття поверхні смаження: Кераміка",
-      "price": 450,
+      "picture": "assets/images/products/toasters/toaster1.jpg",
+      "title": "PHILIPS HD2650/80",
+      "description": "Виробник: Німеччина",
+      "details": "",
+      "price": 1199,
       "inStock": true
     },
     {
       "id": 2,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль",
-      "description": "Покриття: Кераміка",
-      "price": 300,
+      "picture": "assets/images/products/toasters/toaster2.jpg",
+      "title": "PHILIPS HD2582/90",
+      "description": "Виробник: Німеччина",
+      "details": "",
+      "price": 799,
       "inStock": false
     },
     {
       "id": 3,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль111",
-      "description": "Покриття: Кераміка111",
-      "price": 500,
+      "picture": "assets/images/products/toasters/toaster3.jpg",
+      "title": "SENCOR sts 6051GR",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 399,
       "inStock": true
     },
     {
       "id": 4,
-      "picture": "https://i1.rozetka.ua/goods/3167461/10620334_images_3167461455.jpg",
-      "title": "Гриль1123311",
-      "description": "Покриття: Кер21313а111",
-      "price": 700,
+      "picture": "assets/images/products/toasters/toaster4.jpg",
+      "title": "BEKO TAM6201I",
+      "description": "Виробник: Китай",
+      "details": "",
+      "price": 599,
       "inStock": true
     }
   ]

@@ -1,11 +1,9 @@
-<div class="container">
-    <!-- *ngIf="headphoneList"  -->
-     <!-- justify-content-center -->
+<div class="container mt-5">
     <div *ngIf="headphoneList" class="row row-cols-sm-2 row-cols-md-3 w-100">
         <div class="col mb-4" *ngFor="let item of headphoneList">
             <div class="card h-100">
                 <img src={{item.picture}}
-                     class="card-img-top"
+                     class="card-img-top cardImage"
                      alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{item.title}}</h5>
