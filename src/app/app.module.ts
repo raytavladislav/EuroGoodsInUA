@@ -35,6 +35,7 @@ import { MixerDetailsComponent } from './pages/categories/mixer/mixer-details/mi
 import { MouseDetailsComponent } from './pages/categories/mouse/mouse-details/mouse-details.component';
 import { PrinterDetailsComponent } from './pages/categories/printer/printer-details/printer-details.component';
 import { ToasterDetailsComponent } from './pages/categories/toaster/toaster-details/toaster-details.component';
+import { FilterBySearchPipe } from './shared/pipes/filterBySearch/filter-by-search.pipe';
 
 
 
@@ -67,7 +68,8 @@ import { ToasterDetailsComponent } from './pages/categories/toaster/toaster-deta
     MixerDetailsComponent,
     MouseDetailsComponent,
     PrinterDetailsComponent,
-    ToasterDetailsComponent
+    ToasterDetailsComponent,
+    FilterBySearchPipe
   ],
   imports: [
     BrowserModule,
