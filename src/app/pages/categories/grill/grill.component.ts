@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Product } from 'src/app/core/interfaces';
+import { ProductInterface } from 'src/app/core/interfaces';
 import { ProductService } from 'src/app/core/services/product.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/core/services/product.service';
   styleUrls: ['./grill.component.css']
 })
 export class GrillComponent implements OnInit {
-  grillList: Array<Product>
+  grillList: Array<ProductInterface>
 
   constructor(
       private productService: ProductService

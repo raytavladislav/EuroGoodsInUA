@@ -38,46 +38,71 @@ const routes: Routes = [
             { path: '', redirectTo: 'grill', pathMatch: 'full' },
             { path: 'grill/:productId', component: GrillDetailsComponent },
         ] },
+    { path: 'grill/:productId', component: GrillDetailsComponent },
+
+
     { path: 'blender', component: BlenderComponent,
         children: [
             { path: '', redirectTo: 'blender', pathMatch: 'full' },
             { path: 'blender/:productId', component: BlenderDetailsComponent },
         ] },
+    { path: 'blender/:productId', component: BlenderDetailsComponent },
+
+
     { path: 'toaster', component: ToasterComponent,
         children: [
             { path: '', redirectTo: 'toaster', pathMatch: 'full' },
             { path: 'toaster/:productId', component: ToasterDetailsComponent },
         ] },
+    { path: 'toaster/:productId', component: ToasterDetailsComponent },
+
+
     { path: 'mixer', component: MixerComponent,
         children: [
             { path: '', redirectTo: 'mixer', pathMatch: 'full' },
             { path: 'mixer/:productId', component: MixerDetailsComponent },
         ] },
+    { path: 'mixer/:productId', component: MixerDetailsComponent },
+
+
     { path: 'printer', component: PrinterComponent,
         children: [
             { path: '', redirectTo: 'printer', pathMatch: 'full' },
             { path: 'printer/:productId', component: PrinterDetailsComponent },
         ] },
+    { path: 'printer/:productId', component: PrinterDetailsComponent },
+
+
     { path: 'headphone', component: HeadphoneComponent,
         children: [
             { path: '', redirectTo: 'headphone', pathMatch: 'full' },
             { path: 'headphone/:productId', component: HeadphoneDetailsComponent },
         ] },
+    { path: 'headphone/:productId', component: HeadphoneDetailsComponent },
+
+
     { path: 'keyboard', component: KeyboardComponent,
         children: [
             { path: '', redirectTo: 'keyboard', pathMatch: 'full' },
             { path: 'keyboard/:productId', component: KeyboardDetailsComponent },
         ] },
+    { path: 'keyboard/:productId', component: KeyboardDetailsComponent },
+
+
     { path: 'mouse', component: MouseComponent,
         children: [
             { path: '', redirectTo: 'mouse', pathMatch: 'full' },
             { path: 'mouse/:productId', component: MouseDetailsComponent },
         ] },
+    { path: 'mouse/:productId', component: MouseDetailsComponent },
+
+
     { path: 'loud-speaker', component: LoudSpeakerComponent,
         children: [
             { path: '', redirectTo: 'loud-speaker', pathMatch: 'full' },
             { path: 'loud-speaker/:productId', component: LoudSpeakerDetailsComponent },
         ] },
+    { path: 'loud-speaker/:productId', component: LoudSpeakerDetailsComponent },
     
     { path: '**', component: PageNotFoundComponent}
 ];

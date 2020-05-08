@@ -1,1 +1,32 @@
-<p>mouse-details works!</p>
+<div class="container">
+    <div class="card mb-3 pt-5 pl-5 mt-2">
+        <div class="row no-gutters">
+            <div class="row">
+                <div class="col-md-3">
+                    <img [src]="mouse.picture"
+                         class="card-img-top"
+                         alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body row">
+                        <div class="col-6">
+                            <p class="text-success">{{(mouse.inStock) ? 'В наявності' : 'Немає в наявності'}}</p>
+                            <p style="font-size: x-large;"><b>{{mouse.price}} грн.</b></p>
+                            <button class="btn btn-primary" type="submit">До корзини</button>
+                        </div>
+
+                        <div class="col-6">
+                            <h5 class="card-title">{{mouse.title}}</h5>
+                            <p class="card-text p-1">{{mouse.details}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <p>Потужність:                        {{mouse.power}}</p>
+                <p>Тип встановлення:                  {{mouse.installationType}}</p>
+                <p>Тип:                               {{mouse.type}}</p>
+            </div>
+        </div>
+    </div>
+</div>

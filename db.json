@@ -5,9 +5,14 @@
     "picture": "assets/images/products/grills/grill1.jpeg",
     "title": "Multi Grill Cooks SD002",
     "description": "Виробник: Китай",
-    "details": "Нагрівальні пластини мають антипригарне покриття; 3 пристрої в одному; Aнтипригарне покриття; Кришка автоматично і надійно фіксується;",
+    "details": " 3 пристрої в одному; Кришка автоматично і надійно фіксується;",
     "price": 490,
-    "inStock": true
+    "inStock": true,
+    "power": 1400,
+    "surfaceSoating": "Антипригарне",
+    "installationType": "Настільні",
+    "type": "Закритий (двосторонній)",
+    "typeOfHeatingElement": "тен"
   },
   {
     "id": 2,
@@ -16,7 +21,12 @@
     "description": "Виробник: Італія",
     "details": "Справжня знахідка для любителів смачно поїсти! Panini Grill - це простий пристрій, що допоможе вам готувати апетитні хрусткі гарячі бутерброди з різноманітними начинками як на грилі. Причому - з мінімальними витратами часу і сил! Panini Grill щільно притискає скибочки хліба один до одного, не даючи начинці витекти назовні. Тому ви можете одночасно готувати кілька страв, наприклад, сирний сендвіч з овочами, бутерброд з джемом, вафлі-гриль і навіть омлет і оладки! І все це - без краплі жиру! антипригарне покриття. Можна готувати кілька страв одночасно",
     "price": 330,
-    "inStock": true
+    "inStock": true,
+    "power": 1400,
+    "surfaceSoating": "Антипригарне",
+    "installationType": "Настільні",
+    "type": "Закритий (двосторонній)",
+    "typeOfHeatingElement": "тен"
   },
   {
     "id": 3,
@@ -25,7 +35,12 @@
     "description": "Виробник: Німеччина",
     "details": "",
     "price": 765,
-    "inStock": false
+    "inStock": false,
+    "power": 1400,
+    "surfaceSoating": "Антипригарне",
+    "installationType": "Настільні",
+    "type": "Закритий (двосторонній)",
+    "typeOfHeatingElement": "тен"
   },
   {
     "id": 4,
@@ -34,7 +49,12 @@
     "description": "Виробник: Китай",
     "details": "",
     "price": 545,
-    "inStock": true
+    "inStock": true,
+    "power": 1400,
+    "surfaceSoating": "Антипригарне",
+    "installationType": "Настільні",
+    "type": "Закритий (двосторонній)",
+    "typeOfHeatingElement": "тен"
   }
 ],
 
@@ -46,7 +66,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 1699,
-      "inStock": true
+      "inStock": true,
+      "power": 1400,
+      "surfaceSoating": "Пластмаса",
+      "type": "Ручний"
     },
     {
       "id": 2,
@@ -55,7 +78,10 @@
       "description": "Виробник: Німеччина",
       "details": "",
       "price": 1999,
-      "inStock": false
+      "inStock": false,
+      "power": 1400,
+      "surfaceSoating": "Пластмаса",
+      "type": "Ручний"
     },
     {
       "id": 3,
@@ -64,7 +90,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 1399,
-      "inStock": true
+      "inStock": true,
+      "power": 1400,
+      "surfaceSoating": "Пластмаса",
+      "type": "Ручний"
     },
     {
       "id": 4,
@@ -73,7 +102,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 970,
-      "inStock": true
+      "inStock": true,
+      "power": 1400,
+      "surfaceSoating": "Пластмаса",
+      "type": "Ручний"
     }
   ],
 
@@ -85,7 +117,10 @@
       "description": "Дротові",
       "details": "",
       "price": 299,
-      "inStock": true
+      "inStock": true,
+      "power": 100,
+      "surfaceSoating": "Пластма",
+      "type": "USB"
     },
     {
       "id": 2,
@@ -94,7 +129,10 @@
       "description": "Дротові",
       "details": "",
       "price":249,
-      "inStock": false
+      "inStock": false,
+      "power": 100,
+      "surfaceSoating": "Пластма",
+      "type": "USB"
     },
     {
       "id": 3,
@@ -103,7 +141,10 @@
       "description": "Дротові",
       "details": "",
       "price": 1079,
-      "inStock": true
+      "inStock": true,
+      "power": 100,
+      "surfaceSoating": "Пластма",
+      "type": "USB"
     },
     {
       "id": 4,
@@ -112,7 +153,10 @@
       "description": "Бездротові",
       "details": "",
       "price": 999,
-      "inStock": true
+      "inStock": true,
+      "power": 100,
+      "surfaceSoating": "Пластма",
+      "type": "USB"
     }
   ],
 
@@ -124,7 +168,10 @@
       "description": "Покриття поверхні смаження: Кераміка",
       "details": "Дротова. Механічна",
       "price": 449,
-      "inStock": true
+      "inStock": true,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     },
     {
       "id": 2,
@@ -133,7 +180,10 @@
       "description": "Дротова",
       "details": "",
       "price": 599,
-      "inStock": true
+      "inStock": true,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     },
     {
       "id": 3,
@@ -142,7 +192,10 @@
       "description": "Дротова. Механічна",
       "details": "",
       "price": 699,
-      "inStock": false
+      "inStock": false,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     },
     {
       "id": 4,
@@ -151,7 +204,10 @@
       "description": "Дротова. Механічна",
       "details": "",
       "price": 699,
-      "inStock": true
+      "inStock": true,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     }
   ],
 
@@ -163,7 +219,10 @@
       "description": "Bluetooth-з'єднання",
       "details": "",
       "price": 399,
-      "inStock": true
+      "inStock": true,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     },
     {
       "id": 2,
@@ -172,7 +231,10 @@
       "description": "Bluetooth-з'єднання",
       "details": "",
       "price": 1799,
-      "inStock": true
+      "inStock": true,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     },
     {
       "id": 3,
@@ -181,7 +243,10 @@
       "description": "USB-з'єднання",
       "details": "",
       "price": 499,
-      "inStock": true
+      "inStock": true,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     },
     {
       "id": 4,
@@ -190,7 +255,10 @@
       "description": "Bluetooth-з'єднання",
       "details": "",
       "price": 149,
-      "inStock": true
+      "inStock": true,
+      "power": 70,
+      "installationType": "Настільні",
+      "type": "USB"
     }
   ],
 
@@ -202,7 +270,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 999,
-      "inStock": true
+      "inStock": true,
+      "power": 400,
+      "installationType": "настільний",
+      "type": "ручний"
     },
     {
       "id": 2,
@@ -211,7 +282,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 579,
-      "inStock": false
+      "inStock": false,
+      "power": 400,
+      "installationType": "настільний",
+      "type": "ручний"
     },
     {
       "id": 3,
@@ -220,7 +294,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 1399,
-      "inStock": true
+      "inStock": true,
+      "power": 400,
+      "installationType": "настільний",
+      "type": "ручний"
     },
     {
       "id": 4,
@@ -229,7 +306,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 1899,
-      "inStock": true
+      "inStock": true,
+      "power": 400,
+      "installationType": "настільний",
+      "type": "ручний"
     }
   ],
 
@@ -241,7 +321,10 @@
       "description": "Провідна",
       "details": "",
       "price": 699,
-      "inStock": true
+      "inStock": true,
+      "power": 60,
+      "installationType": "настільний",
+      "type": "USB"
     },
     {
       "id": 2,
@@ -250,7 +333,10 @@
       "description": "Провідна",
       "details": "",
       "price": 399,
-      "inStock": true
+      "inStock": true,
+      "power": 60,
+      "installationType": "настільний",
+      "type": "USB"
     },
     {
       "id": 3,
@@ -259,7 +345,10 @@
       "description": "Провідна",
       "details": "",
       "price": 500,
-      "inStock": false
+      "inStock": false,
+      "power": 60,
+      "installationType": "настільний",
+      "type": "USB"
     },
     {
       "id": 4,
@@ -268,7 +357,10 @@
       "description": "Безпровідна",
       "details": "",
       "price": 149,
-      "inStock": true
+      "inStock": true,
+      "power": 60,
+      "installationType": "настільний",
+      "type": "Bluetooth"
     }
   ],
 
@@ -280,7 +372,10 @@
       "description": "Лазерний. Кольоровий друк",
       "details": "",
       "price": 4999,
-      "inStock": true
+      "inStock": true,
+      "power": 800,
+      "installationType": "настільний",
+      "type": "Лазерний"
     },
     {
       "id": 2,
@@ -289,7 +384,10 @@
       "description": "Лазерний. Чорно-білий друк",
       "details": "",
       "price": 8999,
-      "inStock": false
+      "inStock": false,
+      "power": 800,
+      "installationType": "настільний",
+      "type": "Лазерний"
     },
     {
       "id": 3,
@@ -298,7 +396,10 @@
       "description": "Лазерний. Чорно-білий друк",
       "details": "",
       "price": 4899,
-      "inStock": true
+      "inStock": true,
+      "power": 800,
+      "installationType": "настільний",
+      "type": "Лазерний"
     },
     {
       "id": 4,
@@ -307,7 +408,10 @@
       "description": "Струменевий. Кольоровий друк",
       "details": "",
       "price": 6199,
-      "inStock": true
+      "inStock": true,
+      "power": 800,
+      "installationType": "настільний",
+      "type": "Струменевий"
     }
   ],
 
@@ -319,7 +423,10 @@
       "description": "Виробник: Німеччина",
       "details": "",
       "price": 1199,
-      "inStock": true
+      "inStock": true,
+      "power": 1300,
+      "installationType": "настільний",
+      "type": "Автоматичний"
     },
     {
       "id": 2,
@@ -328,7 +435,10 @@
       "description": "Виробник: Німеччина",
       "details": "",
       "price": 799,
-      "inStock": false
+      "inStock": false,
+      "power": 1300,
+      "installationType": "настільний",
+      "type": "Автоматичний"
     },
     {
       "id": 3,
@@ -337,7 +447,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 399,
-      "inStock": true
+      "inStock": true,
+      "power": 1300,
+      "installationType": "настільний",
+      "type": "Автоматичний"
     },
     {
       "id": 4,
@@ -346,7 +459,10 @@
       "description": "Виробник: Китай",
       "details": "",
       "price": 599,
-      "inStock": true
+      "inStock": true,
+      "power": 1300,
+      "installationType": "настільний",
+      "type": "Автоматичний"
     }
   ]
 

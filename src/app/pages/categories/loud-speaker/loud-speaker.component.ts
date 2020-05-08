@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Product } from 'src/app/core/interfaces';
+import { ProductInterface } from 'src/app/core/interfaces';
 import { ProductService } from 'src/app/core/services/product.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/core/services/product.service';
   styleUrls: ['./loud-speaker.component.css']
 })
 export class LoudSpeakerComponent implements OnInit {
-  loudSpeakerList: Array<Product>
+  loudSpeakerList: Array<ProductInterface>
 
   constructor(
     private productService: ProductService

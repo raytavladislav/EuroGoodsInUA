@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Product } from 'src/app/core/interfaces';
+import { ProductInterface } from 'src/app/core/interfaces';
 import { ProductService } from 'src/app/core/services/product.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/core/services/product.service';
   styleUrls: ['./headphone.component.css']
 })
 export class HeadphoneComponent implements OnInit {
-  headphoneList: Array<Product>
+  headphoneList: Array<ProductInterface>
 
   constructor(
     private productService: ProductService
