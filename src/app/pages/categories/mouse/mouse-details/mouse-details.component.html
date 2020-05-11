@@ -23,11 +23,10 @@
                 </div>
             </div>
             <div class="mt-5">
-                <p>Потужність:                        {{mouse.power}}</p>
-                <p>Кількість кнопок:                  {{mouse.buttons}}</p>
-                <p>Тип:                               {{mouse.type}}</p>
-                <p>Колір:                             {{mouse.color}}</p>
-            </div>
+                <h3 class="ml-5 mb-3">Характеристики</h3>
+                <ul *ngFor="let item of mouse.characteristicList" style="list-style: none;">
+                    <li>{{item.lable}} {{item.value}}</li>
+                </ul>
         </div>
     </div>
 </div>

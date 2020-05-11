@@ -45,13 +45,13 @@ export class BlenderDetailsComponent implements OnInit, OnDestroy {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getBlender(params.productId);
+        this.getBlender(params.blenderId);
       }
     )
   }
 
-  private getBlender(productId: number): void {
-    this.productService.getBlender(1)
+  private getBlender(blenderId: number): void {
+    this.productService.getBlender(blenderId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

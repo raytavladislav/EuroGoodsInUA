@@ -45,13 +45,13 @@ export class KeyboardDetailsComponent implements OnInit {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getKeyboard(params.productId);
+        this.getKeyboard(params.keyboardId);
       }
     )
   }
 
-  private getKeyboard(productId: number): void {
-    this.productService.getKeyboard(1)
+  private getKeyboard(keyboardId: number): void {
+    this.productService.getKeyboard(keyboardId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

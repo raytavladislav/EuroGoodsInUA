@@ -45,13 +45,13 @@ export class MixerDetailsComponent implements OnInit {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getMixer(params.productId);
+        this.getMixer(params.mixerId);
       }
     )
   }
 
-  private getMixer(productId: number): void {
-    this.productService.getMixer(1)
+  private getMixer(mixerId: number): void {
+    this.productService.getMixer(mixerId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

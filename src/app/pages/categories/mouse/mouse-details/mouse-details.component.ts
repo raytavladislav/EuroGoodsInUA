@@ -45,13 +45,13 @@ export class MouseDetailsComponent implements OnInit {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getMouse(params.productId);
+        this.getMouse(params.mouseId);
       }
     )
   }
 
-  private getMouse(productId: number): void {
-    this.productService.getMouse(1)
+  private getMouse(mouseId: number): void {
+    this.productService.getMouse(mouseId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

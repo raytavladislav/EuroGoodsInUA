@@ -46,13 +46,13 @@ export class PrinterDetailsComponent implements OnInit {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getPrinter(params.productId);
+        this.getPrinter(params.printerId);
       }
     )
   }
 
-  private getPrinter(productId: number): void {
-    this.productService.getPrinter(1)
+  private getPrinter(printerId: number): void {
+    this.productService.getPrinter(printerId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

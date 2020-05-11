@@ -45,13 +45,13 @@ export class LoudSpeakerDetailsComponent implements OnInit {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getLoudSpeaker(params.productId);
+        this.getLoudSpeaker(params.loudSpeakerId);
       }
     )
   }
 
-  private getLoudSpeaker(productId: number): void {
-    this.productService.getLoudSpeaker(1)
+  private getLoudSpeaker(loudSpeakerId: number): void {
+    this.productService.getLoudSpeaker(loudSpeakerId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

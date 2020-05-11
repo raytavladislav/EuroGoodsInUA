@@ -46,13 +46,13 @@ export class ToasterDetailsComponent implements OnInit {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getToaster(params.productId);
+        this.getToaster(params.toasterId);
       }
     )
   }
 
-  private getToaster(productId: number): void {
-    this.productService.getToaster(1)
+  private getToaster(toasterId: number): void {
+    this.productService.getToaster(toasterId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

@@ -23,11 +23,10 @@
                 </div>
             </div>
             <div class="mt-5">
-                <p>Потужність (Вт):                   {{grill.power}}</p>
-                <p>Тип встановлення:                  {{grill.installationType}}</p>
-                <p>Покриття поверхні смаження:        {{grill.surfaceSoating}}</p>
-                <p>Тип:                               {{grill.type}}</p>
-                <p>Тип нагрівального елемента:        {{grill.power}}</p>
+                <h3 class="ml-5 mb-3">Характеристики</h3>
+                <ul *ngFor="let item of grill.characteristicList" style="list-style: none;">
+                    <li>{{item.lable}} {{item.value}}</li>
+                </ul>
             </div>
         </div>
     </div>

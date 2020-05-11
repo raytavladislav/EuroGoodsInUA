@@ -24,11 +24,10 @@
                 </div>
             </div>
             <div class="mt-5">
-                <p>Потужність (Вт):                   {{blender.power}}</p>
-                <p>Матеріал ніжки блендера:           {{blender.surfaceSoating}}</p>
-                <p>Тип:                               {{blender.type}}</p>
-                <p>Місткість:                         {{blender.capacity}} мл</p>
-            </div>
+                <h3 class="ml-5 mb-3">Характеристики</h3>
+                <ul *ngFor="let item of blender.characteristicList" style="list-style: none;">
+                    <li>{{item.lable}} {{item.value}}</li>
+                </ul>
         </div>
     </div>
 </div>

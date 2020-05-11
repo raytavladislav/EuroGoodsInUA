@@ -23,12 +23,10 @@
                 </div>
             </div>
             <div class="mt-5">
-                <p>Потужність:                        {{loudSpeaker.power}}</p>
-                <p>Час роботи без зарядки (год.):     {{loudSpeaker.batteryLife}}</p>
-                <p>Тип:                               {{loudSpeaker.type}}</p>
-                <p>Максимальні частоти:               {{loudSpeaker.range}}</p>
-                <p>Колір:                             {{loudSpeaker.color}}</p>
-            </div>
+                <h3 class="ml-5 mb-3">Характеристики</h3>
+                <ul *ngFor="let item of loudSpeaker.characteristicList" style="list-style: none;">
+                    <li>{{item.lable}} {{item.value}}</li>
+                </ul>
         </div>
     </div>
 </div>

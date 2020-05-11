@@ -46,13 +46,13 @@ export class GrillDetailsComponent implements OnInit, OnDestroy {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getGrill(params.productId);
+        this.getGrill(params.grillId);
       }
     )
   } 
 
-  private getGrill(productId: number): void {
-    this.productService.getGrill(1)
+  private getGrill(grillId: number): void {
+    this.productService.getGrill(grillId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{

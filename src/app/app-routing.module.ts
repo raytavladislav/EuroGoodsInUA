@@ -45,14 +45,6 @@ const routes: Routes = [
     { path: 'basket', component: BasketComponent },
 
     {
-        path: 'grill', component: GrillComponent,
-        children: [
-            { path: '', component: GrillListComponent },
-            { path: ':grillId', component: GrillDetailsComponent },
-        ]
-    },
-
-    {
         path: 'blender', component: BlenderComponent,
         children: [
             { path: '', component: BlenderListComponent },
@@ -61,26 +53,10 @@ const routes: Routes = [
     },
 
     {
-        path: 'toaster', component: ToasterComponent,
+        path: 'grill', component: GrillComponent,
         children: [
-            { path: '', component: ToasterListComponent },
-            { path: ':toasterId', component: ToasterDetailsComponent },
-        ]
-    },
-
-    {
-        path: 'mixer', component: MixerComponent,
-        children: [
-            { path: '', component: MixerListComponent },
-            { path: ':mixerId', component: MixerDetailsComponent },
-        ]
-    },
-
-    {
-        path: 'printer', component: PrinterComponent,
-        children: [
-            { path: '', component: PrinterListComponent },
-            { path: ':printerId', component: PrinterDetailsComponent },
+            { path: '', component: GrillListComponent },
+            { path: ':grillId', component: GrillDetailsComponent },
         ]
     },
 
@@ -101,6 +77,22 @@ const routes: Routes = [
     },
 
     {
+        path: 'loud-speaker', component: LoudSpeakerComponent,
+        children: [
+            { path: '', component: LoudSpeakerListComponent },
+            { path: ':loudSpeakerId', component: LoudSpeakerDetailsComponent },
+        ]
+    },
+
+    {
+        path: 'mixer', component: MixerComponent,
+        children: [
+            { path: '', component: MixerListComponent },
+            { path: ':mixerId', component: MixerDetailsComponent },
+        ]
+    },
+
+    {
         path: 'mouse', component: MouseComponent,
         children: [
             { path: '', component: MouseListComponent },
@@ -109,10 +101,18 @@ const routes: Routes = [
     },
 
     {
-        path: 'loud-speaker', component: LoudSpeakerComponent,
+        path: 'printer', component: PrinterComponent,
         children: [
-            { path: '', component: LoudSpeakerListComponent },
-            { path: ':loud-speakerId', component: LoudSpeakerDetailsComponent },
+            { path: '', component: PrinterListComponent },
+            { path: ':printerId', component: PrinterDetailsComponent },
+        ]
+    },
+
+    {
+        path: 'toaster', component: ToasterComponent,
+        children: [
+            { path: '', component: ToasterListComponent },
+            { path: ':toasterId', component: ToasterDetailsComponent },
         ]
     },
 

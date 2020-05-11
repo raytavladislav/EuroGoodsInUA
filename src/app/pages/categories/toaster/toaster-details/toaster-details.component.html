@@ -23,11 +23,10 @@
                 </div>
             </div>
             <div class="mt-5">
-                <p>Кількість відділень:               {{toaster.capacity}}</p>
-                <p>Потужність:                        {{toaster.power}}</p>
-                <p>Тип:                               {{toaster.type}}</p>
-                <p>Колір:                             {{toaster.color}}</p>
-            </div>
+                <h3 class="ml-5 mb-3">Характеристики</h3>
+                <ul *ngFor="let item of toaster.characteristicList" style="list-style: none;">
+                    <li>{{item.lable}} {{item.value}}</li>
+                </ul>
         </div>
     </div>
 </div>

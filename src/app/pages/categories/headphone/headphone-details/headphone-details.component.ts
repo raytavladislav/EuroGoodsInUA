@@ -45,13 +45,13 @@ export class HeadphoneDetailsComponent implements OnInit {
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       params => {
-        this.getHeadphone(params.productId);
+        this.getHeadphone(params.headphoneId);
       }
     )
   }
 
-  private getHeadphone(productId: number): void {
-    this.productService.getHeadphone(1)
+  private getHeadphone(headphoneId: number): void {
+    this.productService.getHeadphone(headphoneId)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{
