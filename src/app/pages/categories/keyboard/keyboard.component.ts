@@ -9,26 +9,10 @@ import { ProductService } from 'src/app/core/services/product.service';
   styleUrls: ['./keyboard.component.css']
 })
 export class KeyboardComponent implements OnInit {
-  keyboardList: Array<ProductInterface>
 
-  constructor(
-    private productService: ProductService
-    ) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getKeyboards();
   }
-
-  getKeyboards(): void {
-    this.productService.getKeyboards()
-      .subscribe(data => {
-        this.keyboardList = data;
-        },
-        error => {
-          console.error(error);
-        }
-      );
-  }
-
 }
 

@@ -4,6 +4,7 @@ import { ProductInterface } from 'src/app/core/interfaces/product.interface';
 import { ProductService } from 'src/app/core/services/product.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { BasketService } from 'src/app/core/services/basket/basket.service';
 
 @Component({
   selector: 'app-mouse-details',
@@ -18,11 +19,25 @@ export class MouseDetailsComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private basketService: BasketService
   ) { }
 
   ngOnInit(): void {
     this.getMouseId();
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+  }
+
+  setToBasket(): void {
+    const mouseItemProduct = {
+      name: "mouse",
+      count: 1
+    }
+    this.basketService.setToBasket(mouseItemProduct);
   }
 
   private getMouseId(): void {
@@ -36,16 +51,11 @@ export class MouseDetailsComponent implements OnInit {
   }
 
   private getMouse(productId: number): void {
-    this.productService.getMouse(productId)
+    this.productService.getMouse(1)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{
         this.mouse = data;
       })
-  }
-
-  ngOnDestroy() {
-    this.unsubscribe.next();
-    this.unsubscribe.complete();
   }
 }

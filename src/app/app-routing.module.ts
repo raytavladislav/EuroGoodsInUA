@@ -24,6 +24,16 @@ import { HeadphoneDetailsComponent } from './pages/categories/headphone/headphon
 import { KeyboardDetailsComponent } from './pages/categories/keyboard/keyboard-details/keyboard-details.component';
 import { MouseDetailsComponent } from './pages/categories/mouse/mouse-details/mouse-details.component';
 import { LoudSpeakerDetailsComponent } from './pages/categories/loud-speaker/loud-speaker-details/loud-speaker-details.component';
+import { GrillListComponent } from './pages/categories/grill/grill-list/grill-list.component';
+import { BasketComponent } from './pages/basket/basket.component';
+import { BlenderListComponent } from './pages/categories/blender/blender-list/blender-list.component';
+import { HeadphoneListComponent } from './pages/categories/headphone/headphone-list/headphone-list.component';
+import { KeyboardListComponent } from './pages/categories/keyboard/keyboard-list/keyboard-list.component';
+import { LoudSpeakerListComponent } from './pages/categories/loud-speaker/loud-speaker-list/loud-speaker-list.component';
+import { MouseListComponent } from './pages/categories/mouse/mouse-list/mouse-list.component';
+import { PrinterListComponent } from './pages/categories/printer/printer-list/printer-list.component';
+import { MixerListComponent } from './pages/categories/mixer/mixer-list/mixer-list.component';
+import { ToasterListComponent } from './pages/categories/toaster/toaster-list/toaster-list.component';
 
 
 const routes: Routes = [
@@ -32,79 +42,81 @@ const routes: Routes = [
     { path: 'delivery-and-payments', component: DeliveryAndPaymentComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contacts', component: ContactsComponent },
+    { path: 'basket', component: BasketComponent },
 
-    { path: 'grill', component: GrillComponent,
+    {
+        path: 'grill', component: GrillComponent,
         children: [
-            { path: '', redirectTo: 'grill', pathMatch: 'full' },
-            { path: 'grill/:productId', component: GrillDetailsComponent },
-        ] },
-    { path: 'grill/:productId', component: GrillDetailsComponent },
+            { path: '', component: GrillListComponent },
+            { path: ':grillId', component: GrillDetailsComponent },
+        ]
+    },
 
-
-    { path: 'blender', component: BlenderComponent,
+    {
+        path: 'blender', component: BlenderComponent,
         children: [
-            { path: '', redirectTo: 'blender', pathMatch: 'full' },
-            { path: 'blender/:productId', component: BlenderDetailsComponent },
-        ] },
-    { path: 'blender/:productId', component: BlenderDetailsComponent },
+            { path: '', component: BlenderListComponent },
+            { path: ':blenderId', component: BlenderDetailsComponent },
+        ]
+    },
 
-
-    { path: 'toaster', component: ToasterComponent,
+    {
+        path: 'toaster', component: ToasterComponent,
         children: [
-            { path: '', redirectTo: 'toaster', pathMatch: 'full' },
-            { path: 'toaster/:productId', component: ToasterDetailsComponent },
-        ] },
-    { path: 'toaster/:productId', component: ToasterDetailsComponent },
+            { path: '', component: ToasterListComponent },
+            { path: ':toasterId', component: ToasterDetailsComponent },
+        ]
+    },
 
-
-    { path: 'mixer', component: MixerComponent,
+    {
+        path: 'mixer', component: MixerComponent,
         children: [
-            { path: '', redirectTo: 'mixer', pathMatch: 'full' },
-            { path: 'mixer/:productId', component: MixerDetailsComponent },
-        ] },
-    { path: 'mixer/:productId', component: MixerDetailsComponent },
+            { path: '', component: MixerListComponent },
+            { path: ':mixerId', component: MixerDetailsComponent },
+        ]
+    },
 
-
-    { path: 'printer', component: PrinterComponent,
+    {
+        path: 'printer', component: PrinterComponent,
         children: [
-            { path: '', redirectTo: 'printer', pathMatch: 'full' },
-            { path: 'printer/:productId', component: PrinterDetailsComponent },
-        ] },
-    { path: 'printer/:productId', component: PrinterDetailsComponent },
+            { path: '', component: PrinterListComponent },
+            { path: ':printerId', component: PrinterDetailsComponent },
+        ]
+    },
 
-
-    { path: 'headphone', component: HeadphoneComponent,
+    {
+        path: 'headphone', component: HeadphoneComponent,
         children: [
-            { path: '', redirectTo: 'headphone', pathMatch: 'full' },
-            { path: 'headphone/:productId', component: HeadphoneDetailsComponent },
-        ] },
-    { path: 'headphone/:productId', component: HeadphoneDetailsComponent },
+            { path: '', component: HeadphoneListComponent },
+            { path: ':headphoneId', component: HeadphoneDetailsComponent },
+        ]
+    },
 
-
-    { path: 'keyboard', component: KeyboardComponent,
+    {
+        path: 'keyboard', component: KeyboardComponent,
         children: [
-            { path: '', redirectTo: 'keyboard', pathMatch: 'full' },
-            { path: 'keyboard/:productId', component: KeyboardDetailsComponent },
-        ] },
-    { path: 'keyboard/:productId', component: KeyboardDetailsComponent },
+            { path: '', component: KeyboardListComponent },
+            { path: ':keyboardId', component: KeyboardDetailsComponent },
+        ]
+    },
 
-
-    { path: 'mouse', component: MouseComponent,
+    {
+        path: 'mouse', component: MouseComponent,
         children: [
-            { path: '', redirectTo: 'mouse', pathMatch: 'full' },
-            { path: 'mouse/:productId', component: MouseDetailsComponent },
-        ] },
-    { path: 'mouse/:productId', component: MouseDetailsComponent },
+            { path: '', component: MouseListComponent },
+            { path: ':mouseId', component: MouseDetailsComponent },
+        ]
+    },
 
-
-    { path: 'loud-speaker', component: LoudSpeakerComponent,
+    {
+        path: 'loud-speaker', component: LoudSpeakerComponent,
         children: [
-            { path: '', redirectTo: 'loud-speaker', pathMatch: 'full' },
-            { path: 'loud-speaker/:productId', component: LoudSpeakerDetailsComponent },
-        ] },
-    { path: 'loud-speaker/:productId', component: LoudSpeakerDetailsComponent },
-    
-    { path: '**', component: PageNotFoundComponent}
+            { path: '', component: LoudSpeakerListComponent },
+            { path: ':loud-speakerId', component: LoudSpeakerDetailsComponent },
+        ]
+    },
+
+    { path: '**', component: PageNotFoundComponent }
 ];
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

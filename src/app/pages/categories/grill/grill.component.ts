@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ProductInterface } from 'src/app/core/interfaces';
-import { ProductService } from 'src/app/core/services/product.service';
 
 @Component({
   selector: 'app-grill',
@@ -9,25 +7,10 @@ import { ProductService } from 'src/app/core/services/product.service';
   styleUrls: ['./grill.component.css']
 })
 export class GrillComponent implements OnInit {
-  grillList: Array<ProductInterface>
 
-  constructor(
-      private productService: ProductService
-    ) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getGrills();
-  }
-
-  getGrills(): void {
-    this.productService.getGrills()
-      .subscribe(data => {
-        this.grillList = data;
-        },
-        error => {
-          console.error(error);
-        }
-      );
   }
 
 }

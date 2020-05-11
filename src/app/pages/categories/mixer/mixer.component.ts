@@ -9,25 +9,10 @@ import { ProductService } from 'src/app/core/services/product.service';
   styleUrls: ['./mixer.component.css']
 })
 export class MixerComponent implements OnInit {
-  mixerList: Array<ProductInterface>
-
-  constructor(
-      private productService: ProductService
-    ) { }
+  
+  constructor() { }
 
   ngOnInit(): void {
-    this.getMixers();
-  }
-
-  getMixers(): void {
-    this.productService.getMixers()
-      .subscribe(data => {
-        this.mixerList = data;
-        },
-        error => {
-          console.error(error);
-        }
-      );
   }
 
 }

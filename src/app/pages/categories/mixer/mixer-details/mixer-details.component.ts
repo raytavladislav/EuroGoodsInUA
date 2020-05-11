@@ -4,6 +4,7 @@ import { ProductInterface } from 'src/app/core/interfaces/product.interface';
 import { ProductService } from 'src/app/core/services/product.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { BasketService } from 'src/app/core/services/basket/basket.service';
 
 @Component({
   selector: 'app-mixer-details',
@@ -18,11 +19,25 @@ export class MixerDetailsComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private basketService: BasketService
   ) { }
 
   ngOnInit(): void {
     this.getMixerId();
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+  }
+
+  setToBasket(): void {
+    const mixerItemProduct = {
+      name: "mixer",
+      count: 1
+    }
+    this.basketService.setToBasket(mixerItemProduct);
   }
 
   private getMixerId(): void {
@@ -36,16 +51,11 @@ export class MixerDetailsComponent implements OnInit {
   }
 
   private getMixer(productId: number): void {
-    this.productService.getMixer(productId)
+    this.productService.getMixer(1)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{
         this.mixer = data;
       })
-  }
-
-  ngOnDestroy() {
-    this.unsubscribe.next();
-    this.unsubscribe.complete();
   }
 }

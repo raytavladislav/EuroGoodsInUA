@@ -4,6 +4,7 @@ import { ProductInterface } from 'src/app/core/interfaces/product.interface';
 import { ProductService } from 'src/app/core/services/product.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { BasketService } from 'src/app/core/services/basket/basket.service';
 
 @Component({
   selector: 'app-keyboard-details',
@@ -18,11 +19,25 @@ export class KeyboardDetailsComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private basketService: BasketService
   ) { }
 
   ngOnInit(): void {
     this.getKeyboardId();
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+  }
+
+  setToBasket(): void {
+    const keyboardItemProduct = {
+      name: "keyboard",
+      count: 1
+    }
+    this.basketService.setToBasket(keyboardItemProduct);
   }
 
   private getKeyboardId(): void {
@@ -36,7 +51,7 @@ export class KeyboardDetailsComponent implements OnInit {
   }
 
   private getKeyboard(productId: number): void {
-    this.productService.getKeyboard(productId)
+    this.productService.getKeyboard(1)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{
@@ -44,8 +59,4 @@ export class KeyboardDetailsComponent implements OnInit {
       })
   }
 
-  ngOnDestroy() {
-    this.unsubscribe.next();
-    this.unsubscribe.complete();
-  }
 }

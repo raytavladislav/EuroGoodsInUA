@@ -4,6 +4,7 @@ import { ProductInterface } from 'src/app/core/interfaces/product.interface';
 import { ProductService } from 'src/app/core/services/product.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { BasketService } from 'src/app/core/services/basket/basket.service';
 
 @Component({
   selector: 'app-grill-details',
@@ -19,11 +20,25 @@ export class GrillDetailsComponent implements OnInit, OnDestroy {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private basketService: BasketService
   ) { }
 
   ngOnInit(): void {
     this.getGrillId();
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+  }
+
+  setToBasket(): void {
+    const grillItemProduct = {
+      name: "grill",
+      count: 1
+    }
+    this.basketService.setToBasket(grillItemProduct);
   }
 
   private getGrillId(): void {
@@ -34,10 +49,10 @@ export class GrillDetailsComponent implements OnInit, OnDestroy {
         this.getGrill(params.productId);
       }
     )
-  }
+  } 
 
   private getGrill(productId: number): void {
-    this.productService.getGrill(productId)
+    this.productService.getGrill(1)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{
@@ -45,8 +60,4 @@ export class GrillDetailsComponent implements OnInit, OnDestroy {
       })
   }
 
-  ngOnDestroy() {
-    this.unsubscribe.next();
-    this.unsubscribe.complete();
-  }
 }

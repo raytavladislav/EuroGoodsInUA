@@ -36,6 +36,17 @@ import { MouseDetailsComponent } from './pages/categories/mouse/mouse-details/mo
 import { PrinterDetailsComponent } from './pages/categories/printer/printer-details/printer-details.component';
 import { ToasterDetailsComponent } from './pages/categories/toaster/toaster-details/toaster-details.component';
 import { FilterBySearchPipe } from './shared/pipes/filterBySearch/filter-by-search.pipe';
+import { GrillListComponent } from './pages/categories/grill/grill-list/grill-list.component';
+import { BasketComponent } from './pages/basket/basket.component';
+import { BlenderListComponent } from './pages/categories/blender/blender-list/blender-list.component';
+import { HeadphoneListComponent } from './pages/categories/headphone/headphone-list/headphone-list.component';
+import { KeyboadrListComponent } from './pages/categories/keyboard/keyboadr-list/keyboadr-list.component';
+import { KeyboardListComponent } from './pages/categories/keyboard/keyboard-list/keyboard-list.component';
+import { LoudSpeakerListComponent } from './pages/categories/loud-speaker/loud-speaker-list/loud-speaker-list.component';
+import { MixerListComponent } from './pages/categories/mixer/mixer-list/mixer-list.component';
+import { MouseListComponent } from './pages/categories/mouse/mouse-list/mouse-list.component';
+import { PrinterListComponent } from './pages/categories/printer/printer-list/printer-list.component';
+import { ToasterListComponent } from './pages/categories/toaster/toaster-list/toaster-list.component';
 
 
 
@@ -69,7 +80,18 @@ import { FilterBySearchPipe } from './shared/pipes/filterBySearch/filter-by-sear
     MouseDetailsComponent,
     PrinterDetailsComponent,
     ToasterDetailsComponent,
-    FilterBySearchPipe
+    FilterBySearchPipe,
+    GrillListComponent,
+    BasketComponent,
+    BlenderListComponent,
+    HeadphoneListComponent,
+    KeyboadrListComponent,
+    KeyboardListComponent,
+    LoudSpeakerListComponent,
+    MixerListComponent,
+    MouseListComponent,
+    PrinterListComponent,
+    ToasterListComponent
   ],
   imports: [
     BrowserModule,

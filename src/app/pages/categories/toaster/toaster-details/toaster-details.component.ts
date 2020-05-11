@@ -4,6 +4,7 @@ import { ProductInterface } from 'src/app/core/interfaces/product.interface';
 import { ProductService } from 'src/app/core/services/product.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { BasketService } from 'src/app/core/services/basket/basket.service';
 
 
 @Component({
@@ -19,11 +20,25 @@ export class ToasterDetailsComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private basketService: BasketService
   ) { }
 
   ngOnInit(): void {
     this.getToasterId();
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+  }
+
+  setToBasket(): void {
+    const toasterItemProduct = {
+      name: "toaster",
+      count: 1
+    }
+    this.basketService.setToBasket(toasterItemProduct);
   }
 
   private getToasterId(): void {
@@ -37,16 +52,11 @@ export class ToasterDetailsComponent implements OnInit {
   }
 
   private getToaster(productId: number): void {
-    this.productService.getToaster(productId)
+    this.productService.getToaster(1)
     .pipe(takeUntil(this.unsubscribe))
     .subscribe(
       (data) =>{
         this.toaster = data;
       })
-  }
-
-  ngOnDestroy() {
-    this.unsubscribe.next();
-    this.unsubscribe.complete();
   }
 }
