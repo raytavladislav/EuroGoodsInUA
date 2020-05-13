@@ -19,7 +19,6 @@ export class BlenderListComponent implements OnInit {
   }
 
   getBlenders(): void {
-    // this.grillList = this.productService.getBlenders();
     this.productService.getBlenders()
       .subscribe(data => {
         this.blenderList = data;

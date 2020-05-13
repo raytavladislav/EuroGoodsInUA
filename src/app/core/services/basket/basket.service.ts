@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class BasketService {
   basket = new BehaviorSubject([]);
   basketCount = new BehaviorSubject(0);
-  
+
   constructor() {
     this.setToLocalStorage();
   }
@@ -19,20 +19,20 @@ export class BasketService {
   }
 
   private setToLocalStorage(product?): void {
-    if (!localStorage.getItem("basket")){
+    if (!localStorage.getItem("basket")) {
       localStorage.setItem("basket", JSON.stringify([]));
     } else {
       this.basket.next(JSON.parse(localStorage.getItem("basket")));
       this.basketCount.next(JSON.parse(localStorage.getItem("basket")).lenght);
     }
-    if (!product){
+    if (!product) {
       return
     }
+
     const basket = JSON.parse(localStorage.getItem("basket"));
     basket.push(product);
     localStorage.setItem("basket", JSON.stringify(basket));
     this.basket.next(basket);
     this.basketCount.next(basket.lenght);
-
   }
 }

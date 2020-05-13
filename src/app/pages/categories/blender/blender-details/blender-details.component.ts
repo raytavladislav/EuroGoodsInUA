@@ -11,6 +11,7 @@ import { BasketService } from 'src/app/core/services/basket/basket.service';
   templateUrl: './blender-details.component.html',
   styleUrls: ['./blender-details.component.css']
 })
+
 export class BlenderDetailsComponent implements OnInit, OnDestroy {
   grillId: number;
   blender: ProductInterface;
@@ -34,7 +35,10 @@ export class BlenderDetailsComponent implements OnInit, OnDestroy {
 
   setToBasket(): void {
     const blenderItemProduct = {
-      name: "blender",
+      picture: this.blender.picture,
+      name: this.blender.title,
+      price: this.blender.price,
+      id: this.blender.id,
       count: 1
     }
     this.basketService.setToBasket(blenderItemProduct);

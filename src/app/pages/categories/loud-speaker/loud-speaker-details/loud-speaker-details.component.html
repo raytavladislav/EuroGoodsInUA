@@ -12,7 +12,7 @@
                         <div class="col-6">
                             <p class="text-success">{{(loudSpeaker.inStock) ? 'В наявності' : 'Немає в наявності'}}</p>
                             <p style="font-size: x-large;"><b>{{loudSpeaker.price}} грн.</b></p>
-                            <button class="btn btn-primary" type="submit">До корзини</button>
+                            <button class="btn btn-primary" type="submit" (click)="setToBasket()">До корзини</button>
                         </div>
 
                         <div class="col-6">

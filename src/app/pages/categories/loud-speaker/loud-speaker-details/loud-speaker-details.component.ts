@@ -34,7 +34,10 @@ export class LoudSpeakerDetailsComponent implements OnInit {
   
   setToBasket(): void {
     const loudSpeakerItemProduct = {
-      name: "loudSpeaker",
+      picture: this.loudSpeaker.picture,
+      name: this.loudSpeaker.title,
+      price: this.loudSpeaker.price,
+      id: this.loudSpeaker.id,
       count: 1
     }
     this.basketService.setToBasket(loudSpeakerItemProduct);

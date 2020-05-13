@@ -10,7 +10,8 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class BasketComponent implements OnInit, OnDestroy {
   basketList;
-  
+  product;
+
   private unsubscribe = new Subject();
 
   constructor(
@@ -27,9 +28,15 @@ export class BasketComponent implements OnInit, OnDestroy {
   }
 
   getBasketList(): void {
-    this.basketService.basket.pipe(takeUntil(this.unsubscribe)).subscribe(data => {
-      console.log(data);
-    });
+    this.basketService.basket.pipe(takeUntil(this.unsubscribe))
+      .subscribe(
+        data => {
+          console.log(data);
+          this.product = data;
+      });
   }
-
+  
+  clearBasket(): void {
+    window.localStorage.clear()
+  }
 }

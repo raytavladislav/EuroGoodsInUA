@@ -34,7 +34,10 @@ export class MouseDetailsComponent implements OnInit {
 
   setToBasket(): void {
     const mouseItemProduct = {
-      name: "mouse",
+      picture: this.mouse.picture,
+      name: this.mouse.title,
+      price: this.mouse.price,
+      id: this.mouse.id,
       count: 1
     }
     this.basketService.setToBasket(mouseItemProduct);

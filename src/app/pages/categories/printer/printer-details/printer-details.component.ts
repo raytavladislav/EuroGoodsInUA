@@ -35,7 +35,10 @@ export class PrinterDetailsComponent implements OnInit {
 
   setToBasket(): void {
     const printerItemProduct = {
-      name: "printer",
+      picture: this.printer.picture,
+      name: this.printer.title,
+      price: this.printer.price,
+      id: this.printer.id,
       count: 1
     }
     this.basketService.setToBasket(printerItemProduct);

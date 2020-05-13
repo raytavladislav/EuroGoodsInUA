@@ -34,7 +34,10 @@ export class HeadphoneDetailsComponent implements OnInit {
 
   setToBasket(): void {
     const headphoneItemProduct = {
-      name: "headphone",
+      picture: this.headphone.picture,
+      name: this.headphone.title,
+      price: this.headphone.price,
+      id: this.headphone.id,
       count: 1
     }
     this.basketService.setToBasket(headphoneItemProduct);

@@ -34,7 +34,10 @@ export class KeyboardDetailsComponent implements OnInit {
 
   setToBasket(): void {
     const keyboardItemProduct = {
-      name: "keyboard",
+      picture: this.keyboard.picture,
+      name: this.keyboard.title,
+      price: this.keyboard.price,
+      id: this.keyboard.id,
       count: 1
     }
     this.basketService.setToBasket(keyboardItemProduct);

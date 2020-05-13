@@ -35,7 +35,10 @@ export class GrillDetailsComponent implements OnInit, OnDestroy {
 
   setToBasket(): void {
     const grillItemProduct = {
-      name: "grill",
+      picture: this.grill.picture,
+      name: this.grill.title,
+      price: this.grill.price,
+      id: this.grill.id,
       count: 1
     }
     this.basketService.setToBasket(grillItemProduct);
@@ -59,5 +62,4 @@ export class GrillDetailsComponent implements OnInit, OnDestroy {
         this.grill = data;
       })
   }
-
 }

@@ -35,7 +35,10 @@ export class ToasterDetailsComponent implements OnInit {
 
   setToBasket(): void {
     const toasterItemProduct = {
-      name: "toaster",
+      picture: this.toaster.picture,
+      name: this.toaster.title,
+      price: this.toaster.price,
+      id: this.toaster.id,
       count: 1
     }
     this.basketService.setToBasket(toasterItemProduct);

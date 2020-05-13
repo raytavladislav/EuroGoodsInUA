@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       
 
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-8">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-7">
         <li ngbDropdown class="nav-item dropdown">
           <a ngbDropdownToggle class="nav-link dropdown-toggle"
             id="navbarDropdown"
@@ -58,18 +58,25 @@
           <a class="nav-link" routerLink="products">Головна</a>
         </li>
         <li routerLinkActive="active" class="nav-item">
-          <a class="nav-link" routerLink="delivery-and-payments">Доставка та оплата</a>
+          <a class="nav-link" routerLink="delivery-and-payments">Доставка</a>
         </li>
         <li routerLinkActive="active" class="nav-item">
-          <a class="nav-link" routerLink="about">Про компанію</a>
+          <a class="nav-link" routerLink="about">Про нас</a>
         </li>
         <li routerLinkActive="active" class="nav-item">
           <a class="nav-link" routerLink="contacts">Контакти</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0  col-md-4">
+      <form class="form-inline my-2 my-lg-0 col-md-4">
         <input class="form-control mr-sm-2" type="search" placeholder="Пошук товарів" aria-label="Search">
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Пошук</button>
       </form>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-1 ">
+        <li class="nav-link">
+          <a routerLink="basket" routerLinkActive="active"><span class="material-icons basket">
+            local_grocery_store
+            </span></a>
+        </li>
+      </ul>
     </div>
   </nav>

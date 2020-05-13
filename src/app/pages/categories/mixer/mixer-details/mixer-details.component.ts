@@ -34,7 +34,10 @@ export class MixerDetailsComponent implements OnInit {
 
   setToBasket(): void {
     const mixerItemProduct = {
-      name: "mixer",
+      picture: this.mixer.picture,
+      name: this.mixer.title,
+      price: this.mixer.price,
+      id: this.mixer.id,
       count: 1
     }
     this.basketService.setToBasket(mixerItemProduct);
