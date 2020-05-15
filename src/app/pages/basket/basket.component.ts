@@ -9,8 +9,12 @@ import { takeUntil } from 'rxjs/operators';
   styleUrls: ['./basket.component.css']
 })
 export class BasketComponent implements OnInit, OnDestroy {
+
   basketList;
-  product;
+  product = [];
+  basket;
+  productIndex: number;
+  id: number;
 
   private unsubscribe = new Subject();
 
@@ -27,6 +31,11 @@ export class BasketComponent implements OnInit, OnDestroy {
     this.unsubscribe.complete();
   }
 
+  clearBasket(): void {
+    localStorage.clear()
+    this.product = [] // очищаем this.product тоже
+  }
+
   getBasketList(): void {
     this.basketService.basket.pipe(takeUntil(this.unsubscribe))
       .subscribe(
@@ -35,8 +44,30 @@ export class BasketComponent implements OnInit, OnDestroy {
           this.product = data;
       });
   }
-  
-  clearBasket(): void {
-    window.localStorage.clear()
+
+  deleteBasketItem(productId: number) {
+    this.basketService.removeFromLocalstorage(productId);
+
+    var index = this.product.findIndex(x => x.id == productId);
+    this.product.splice(index, 1); // удаляем с this.product тоже
   }
+
+  // deleteBasketItem(): void {
+  //   var basket = JSON.parse(localStorage.getItem("basket"));
+    
+  //   this.basket.splice("this.basket", JSON.stringify(this.id), 1);
+  //   localStorage.setItem("basket", JSON.stringify(basket));
+  //   console.log(this.id)
+  // }
+
+  // deleteBasketItem(productId) {
+  //   var basket = JSON.parse(localStorage.getItem("basket"));
+  //   //находжу, під яким індексом знаходиться id
+  //   var index = basket.findIndex(x=> x == productId);
+  //   // видаляю по знайденному індексу
+  //   this.product.id
+  //   basket.splice(index, 1);
+  //   localStorage.setItem("basket", JSON.stringify(basket));
+  // }
 }
+// basket = basket.filter((item,index) => index === productId);

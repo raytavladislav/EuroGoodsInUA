@@ -7,7 +7,7 @@
         <button class="buttonDeleteAll" (click)="clearBasket()">Очистити</button>
     </div>
 
-    <div class="mt-4 basketItem" *ngFor="let item of product">
+    <div class="mt-4 basketItem" *ngFor="let item of product; let i = index">
         <div class="row">
             <div class="col-3 d-flex justify-content-center align-items-center pictureOfItemDiv">
                 <img [src]="item.picture"
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="col-1 d-flex align-items-center">
-                <button class="deleteItemButton">
+                <button class="deleteItemButton" (click)="deleteBasketItem(item.id)">
                     <span class="text-danger material-icons md-40 deleteItemIcon">
                         delete
                     </span>
@@ -61,5 +61,11 @@
         <div>
             <p><b>Загальна сума: ---</b></p>
         </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <button class="buttonDeleteAll" (click)="clearBasket()">
+            Підтвердити
+        </button>
     </div>
 </div>
