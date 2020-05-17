@@ -20,9 +20,6 @@ export class BasketComponent implements OnInit, OnDestroy {
   basket;
   productIndex: number;
   id: number;
-
-  // newUserForm: FormGroup;
-  // isSubmit = false;
   userList: Array<UserInterface>;
 
   private unsubscribe = new Subject();
@@ -68,8 +65,6 @@ export class BasketComponent implements OnInit, OnDestroy {
 
   submit(user: UserInterface): void {}
 
-
-  // user: UserInterface
   getOrders(): void {
     // this.basketService.takeUserOrder(user)
     // .subscribe(
@@ -78,9 +73,7 @@ export class BasketComponent implements OnInit, OnDestroy {
     //     this.userList = this.basketService.getUserOrder();
     // });
 
-
     // this.userList = this.basketService.getUserOrder();
-
     this.basketService.getOrders()
       .subscribe(data => {
         this.userList = data;
@@ -102,6 +95,13 @@ export class BasketComponent implements OnInit, OnDestroy {
       .subscribe(() => {
         this.getOrders();
       });
+  }
+
+  get total(){
+    return this.product.reduce((sum,x) =>
+    ({count: 1,
+      price:sum.price+x.count*x.price}),
+      {quantity: 1, price: 0}).price;
   }
 
 }

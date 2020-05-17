@@ -1187,6 +1187,16 @@
       "postNumber": "123",
       "phone": "0636363636",
       "addItionalInfo": ""
+    },
+    {
+      "id": "BMwcimx",
+      "firstName": "Danilo",
+      "secondName": "Rayta",
+      "surname": "Andriyovich",
+      "city": "Lviv",
+      "postNumber": "32",
+      "phone": "380985162374",
+      "addItionalInfo": "немає"
     }
   ]
 }

@@ -6,5 +6,5 @@ export class UserInterface {
     city: string;
     postNumber: number;
     phone: string;
-    addItionalInfo: string;
+    addItionalInfo?: string;
 }
