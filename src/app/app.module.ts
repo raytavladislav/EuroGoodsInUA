@@ -47,6 +47,8 @@ import { MixerListComponent } from './pages/categories/mixer/mixer-list/mixer-li
 import { MouseListComponent } from './pages/categories/mouse/mouse-list/mouse-list.component';
 import { PrinterListComponent } from './pages/categories/printer/printer-list/printer-list.component';
 import { ToasterListComponent } from './pages/categories/toaster/toaster-list/toaster-list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserOrderComponent } from './pages/basket/user-order/user-order.component';
 
 
 
@@ -91,11 +93,14 @@ import { ToasterListComponent } from './pages/categories/toaster/toaster-list/to
     MixerListComponent,
     MouseListComponent,
     PrinterListComponent,
-    ToasterListComponent
+    ToasterListComponent,
+    UserOrderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     BrowserAnimationsModule,
     CarouselModule.forRoot(),

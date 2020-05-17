@@ -4,7 +4,6 @@
 
 .title {
     height: 70px;
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +11,6 @@
 
 .clear {
     height: 50px;
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: flex-end;
 }
@@ -35,16 +33,15 @@
     background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
 }
 
-a.buttonDeleteAll:active {
-    top: .1em;
-    left: .1em;
+/* a.buttonDeleteAll:active {
+    top: .2em;
+    left: .2em;
     box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
-}
+} */
 
 .basketItem {
     min-height: 130px;
     background-color: rgba(0, 0, 0, 0.3);
-    /* border: 1px solid #000; */
 }
 
 .itemPictureOnBasket {
@@ -74,15 +71,21 @@ a.buttonDeleteAll:active {
 .deleteItemIcon:hover {
     color: red!important;
 }
-/* 
-.pictureOfItemDiv {
-    border: 1px solid green;
-}
 
-.headerOfItem {
-    border: 1px solid red;
+.buttonDeleteItem{
+    position: relative;
+    display: inline-block;
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid rgb(43, 43, 43);
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em rgb(0, 0, 0);
+    background: linear-gradient(rgb(194, 194, 194), rgb(184, 183, 183) 48%, rgb(102, 101, 101) 52%, rgb(66, 66, 66));
 }
-
-.footerOfItem {
-    border: 1px solid purple;
-} */

@@ -2,70 +2,80 @@
     <div class="col-12 title">
         <h2>Кошик</h2>
     </div>
-
-    <div class="col-12 clear">
-        <button class="buttonDeleteAll" (click)="clearBasket()">Очистити</button>
-    </div>
-
-    <div class="mt-4 basketItem" *ngFor="let item of product; let i = index">
-        <div class="row">
-            <div class="col-3 d-flex justify-content-center align-items-center pictureOfItemDiv">
-                <img [src]="item.picture"
-                     class="mt-1 itemPictureOnBasket"
-                     alt="...">
-            </div>
-
-            <div class="col-8">
-                <div class="col-12 row mt-3 headerOfItem">
-                    <div class="col-5">
-                        <p>Назва</p>
-                    </div>
-                    <div class="col-3">
-                        <p>Код товару</p>
-                    </div>
-                    <div class="col-2">
-                        <p>Ціна</p>
-                    </div>
-                    <div class="col-2">
-                        <p>К-сть</p>
-                    </div>
-                </div>
-
-                <div class="col-12 row mt-3 footerOfItem">
-                    <div class="col-5">
-                        <p>{{item.name}}</p>
-                    </div>
-                    <div class="col-3">
-                        <p>{{item.id}}</p>
-                    </div>
-                    <div class="col-2">
-                        <p>{{item.price}}</p>
-                    </div>
-                    <div class="col-2">
-                        <p>{{item.count}}</p>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
-            </div>
-            <div class="col-1 d-flex align-items-center">
-                <button class="deleteItemButton" (click)="deleteBasketItem(item.id)">
-                    <span class="text-danger material-icons md-40 deleteItemIcon">
-                        delete
-                    </span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-12 mt-5 d-flex justify-content-end">
         <div>
-            <p><b>Загальна сума: ---</b></p>
-        </div>
-    </div>
+            <div class="col-12 clear">
+                <button class="buttonDeleteAll" (click)="clearBasket()">Очистити</button>
+            </div>
 
-    <div class="col-12 mt-5">
-        <button class="buttonDeleteAll" (click)="clearBasket()">
-            Підтвердити
-        </button>
-    </div>
+            <div class="mt-4 basketItem" *ngFor="let item of product; let i = index">
+                <div class="row">
+                    <div class="col-3 d-flex justify-content-center align-items-center pictureOfItemDiv">
+                        <img [src]="item.picture"
+                            class="mt-1 itemPictureOnBasket"
+                            alt="...">
+                    </div>
+
+                    <div class="col-8">
+                        <div class="col-12 row mt-3 headerOfItem">
+                            <div class="col-5">
+                                <p>Назва</p>
+                            </div>
+                            <div class="col-3">
+                                <p>Код товару</p>
+                            </div>
+                            <div class="col-2">
+                                <p>Ціна</p>
+                            </div>
+                            <div class="col-2">
+                                <p>К-сть</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 row mt-3 footerOfItem">
+                            <div class="col-5">
+                                <p>{{item.name}}</p>
+                            </div>
+                            <div class="col-3">
+                                <p>{{item.id}}</p>
+                            </div>
+                            <div class="col-2">
+                                <p>{{item.price}}</p>
+                            </div>
+                            <div class="col-2">
+                                <p>{{item.count}}</p>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-flex align-items-center">
+                        <button class="deleteItemButton" (click)="deleteBasketItem(item.id)">
+                            <span class="text-danger material-icons md-40 deleteItemIcon">
+                                delete
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5 d-flex justify-content-end">
+                <div>
+                    <p><b>Загальна сума: ---</b></p>
+                </div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <h2>Підтвердження доставки</h2>
+            </div>
+ 
+<!-- $event в addOrder, якшо захочу вивести данні -->
+            <app-user-order class="user-order"
+                            (update)="updateOrders($event)"
+                            (newUser)="addOrder($event)">
+
+            </app-user-order>
+            
+        </div>
+        <!-- <div *ngIf="!" class="text-center">
+            <p>Виберіть товар</p>
+        </div> -->
 </div>
