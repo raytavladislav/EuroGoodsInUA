@@ -75,44 +75,43 @@ export class BasketComponent implements OnInit, OnDestroy {
       error => console.log(error)
   };
 
-  getProductOrder(): void {
-    this.basketService.getProductOrder()
-      .subscribe(products => {
-        this.product = products;
-      }),
-      error => console.log(error)
-  }
+  // getProductOrder(): void {
+  //   this.basketService.getProductOrder()
+  //     .subscribe(products => {
+  //       this.product = products;
+  //     }),
+  //     error => console.log(error)
+  // }
 
   updateOrder(user: UserInterface): void {
     this.basketService.updateOrder(user)
     .subscribe();
   }
 
-  updateProductsOrder(product: ProductInterface): void {
-    this.basketService.updateProductsOrder(product)
-    .subscribe();
-  }
+  // updateProductsOrder(product: ProductInterface): void {
+  //   this.basketService.updateProductsOrder(product)
+  //   .subscribe();
+  // }
 
   addOrder(user: UserInterface): void {
+    user.product = this.product;
     this.basketService.addOrder(user)
       .subscribe(() => {
         this.getOrder();
-        // this.getProductOrder()
       });
   }
 
-  addProductsOrder(product: ProductInterface): void {
-    this.basketService.addProductsOrder(product)
-      .subscribe(() => {
-        this.getProductOrder();
-      });
-  }
+  // addProductsOrder(product: ProductInterface): void {
+  //   this.basketService.addProductsOrder(product)
+  //     .subscribe(() => {
+  //       this.getProductOrder();
+  //     });
+  // }
 
   get total(){
     return this.product.reduce((sum,x) =>
-    ({count: 1,
-      price:sum.price+x.count*x.price}),
-      {quantity: 1, price: 0}).price;
+    ({count: 1, price:sum.price+x.count*x.price}),
+    {quantity: 1, price: 0}).price;
   }
 
 }

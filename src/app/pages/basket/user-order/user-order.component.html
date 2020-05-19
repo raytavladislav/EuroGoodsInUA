@@ -54,7 +54,7 @@
                     required
                     autocomplete="off">
             </p>
-    
+
             <div *ngIf="isSubmit && newUserForm.get('surname').invalid"  class="text-danger">
                 <span *ngIf="newUserForm.get('surname').errors.required">
                     Введіть данні</span>

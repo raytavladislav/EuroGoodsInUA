@@ -7,4 +7,5 @@ export class UserInterface {
     postNumber: number;
     phone: string;
     addItionalInfo?: string;
+    product: any;
 }

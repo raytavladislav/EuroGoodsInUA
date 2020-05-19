@@ -92,15 +92,13 @@ export class UserOrderComponent implements OnInit {
           Validators.minLength(10)
         ]
       ],
-      addItionalInfo: ['']
-    }),
-
-    this.product = [{
+      addItionalInfo: [''],
+      product: [{
         id: '',
         title: '',
         price: ''
-      }
-    ]
+      }]
+    })  
   }
 
 }

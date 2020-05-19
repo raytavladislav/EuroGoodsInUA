@@ -66,24 +66,24 @@ export class BasketService {
     return this.http.get<Array<UserInterface>>(`${this.url}/orders`);
   }
 
-  getProductOrder(): Observable<Array<any>> {
-    return this.http.get<Array<any>>(`${this.url}/orders`);
-  }
+  // getProductOrder(): Observable<Array<any>> {
+  //   return this.http.get<Array<any>>(`${this.url}/orders`);
+  // }
 
   updateOrder(user: UserInterface) {
     return this.http.put<Array<UserInterface>>(`${this.url}/orders`, user);
   }
 
-  updateProductsOrder(product: ProductInterface) {
-    return this.http.put<Array<ProductInterface>>(`${this.url}/orders`, product);
-  }
+  // updateProductsOrder(product: ProductInterface) {
+  //   return this.http.put<Array<ProductInterface>>(`${this.url}/orders`, product);
+  // }
 
   addOrder(user: UserInterface) {
     return this.http.post<Array<UserInterface>>(`${this.url}/orders`, user);
   }
 
-  addProductsOrder(product: ProductInterface) {
-    return this.http.post<Array<ProductInterface>>(`${this.url}/orders`, product);
-  }
+  // addProductsOrder(product: ProductInterface) {
+  //   return this.http.post<Array<ProductInterface>>(`${this.url}/orders`, product);
+  // }
 
 }

@@ -66,11 +66,12 @@
             <div class="mt-5 text-center">
                 <h2>Підтвердження доставки</h2>
             </div>
+
+
+            <!-- (newProduct)="addProductsOrder($event)"  (updateProducts)="updateProductsOrder($event)" -->
             <app-user-order class="user-order"
                             (update)="updateOrder($event)"
-                            (updateProducts)="updateProductsOrder($event)"
-                            (newUser)="addOrder($event)"
-                            (newProduct)="addProductsOrder($event)">
+                            (newUser)="addOrder($event)">
             </app-user-order>
         </div>
         <!-- <div *ngIf="!" class="text-center">
