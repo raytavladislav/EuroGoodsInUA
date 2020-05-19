@@ -42,6 +42,7 @@ export class PrinterDetailsComponent implements OnInit {
       count: 1
     }
     this.basketService.setToBasket(printerItemProduct);
+    alert('Товар додано!');
   }
 
   private getPrinterId(): void {

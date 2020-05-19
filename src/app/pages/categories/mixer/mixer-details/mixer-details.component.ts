@@ -41,6 +41,7 @@ export class MixerDetailsComponent implements OnInit {
       count: 1
     }
     this.basketService.setToBasket(mixerItemProduct);
+    alert('Товар додано!');
   }
 
   private getMixerId(): void {

@@ -34,6 +34,7 @@ import { MouseListComponent } from './pages/categories/mouse/mouse-list/mouse-li
 import { PrinterListComponent } from './pages/categories/printer/printer-list/printer-list.component';
 import { MixerListComponent } from './pages/categories/mixer/mixer-list/mixer-list.component';
 import { ToasterListComponent } from './pages/categories/toaster/toaster-list/toaster-list.component';
+import { SearchComponent } from './pages/search/search.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'contacts', component: ContactsComponent },
     { path: 'basket', component: BasketComponent },
+    { path: 'search', component: SearchComponent },
 
     {
         path: 'blender', component: BlenderComponent,

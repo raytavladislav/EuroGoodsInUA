@@ -8,9 +8,10 @@
                                    'is-valid':   newUserForm.get('firstName').dirty && isSubmit && newUserForm.get('firstName').valid }"
                     id="validationTextarea"
                     type="text"
-                    placeholder="Ім'я"
+                    placeholder="Обов'язково"
                     formControlName="firstName"
-                    required>
+                    required
+                    autocomplete="off">
             </p>
             <div *ngIf="isSubmit && newUserForm.get('firstName').invalid" class="text-danger">
                 <span *ngIf="newUserForm.get('firstName').errors.required">
@@ -27,9 +28,10 @@
                                    'is-valid':   newUserForm.get('secondName').dirty && isSubmit && newUserForm.get('secondName').valid }"
                     id="validationTextarea"
                     type="text"
-                    placeholder="Прізвище"
+                    placeholder="Обов'язково"
                     formControlName="secondName"
-                    required>
+                    required
+                    autocomplete="off">
             </p>
                     
             <div *ngIf="isSubmit && newUserForm.get('secondName').invalid" class="text-danger">
@@ -47,9 +49,10 @@
                                    'is-valid':   newUserForm.get('surname').dirty && isSubmit && newUserForm.get('surname').valid }"
                     id="validationTextarea"
                     type="text"
-                    placeholder="По-батькові"
+                    placeholder="Обов'язково"
                     formControlName="surname"
-                    required>
+                    required
+                    autocomplete="off">
             </p>
     
             <div *ngIf="isSubmit && newUserForm.get('surname').invalid"  class="text-danger">
@@ -67,9 +70,10 @@
                                    'is-valid':   newUserForm.get('city').dirty && isSubmit && newUserForm.get('city').valid }"
                     id="validationTextarea"
                     type="text"
-                    placeholder="Місто"
+                    placeholder="Обов'язково"
                     formControlName="city"
-                    required>
+                    required
+                    autocomplete="off">
             </p>
     
             <div *ngIf="isSubmit && newUserForm.get('city').invalid"  class="text-danger">
@@ -81,15 +85,16 @@
         </div>
     
         <div class="form-group col-8 mt-4">
-            <p><b>Номер відділення</b>
+            <p><b>Номер відділення НП або будинок та квартира для адресної доставки</b>
                 <input class="form-control"
                        [ngClass]="{'is-invalid': newUserForm.get('postNumber').dirty && isSubmit && newUserForm.get('postNumber').invalid,
                                    'is-valid':   newUserForm.get('postNumber').dirty && isSubmit && newUserForm.get('postNumber').valid }"
                     id="validationTextarea"
                     type="text"
-                    placeholder="Номер відділення"
+                    placeholder="Обов'язково"
                     formControlName="postNumber"
-                    required>
+                    required
+                    autocomplete="off">
             </p>
     
             <div *ngIf="isSubmit && newUserForm.get('postNumber').invalid"  class="text-danger">
@@ -106,10 +111,11 @@
                     [ngClass]="{'is-invalid': newUserForm.get('phone').dirty && isSubmit && newUserForm.get('phone').invalid,
                                 'is-valid':   newUserForm.get('phone').dirty && isSubmit && newUserForm.get('phone').valid }"
                     id="validationTextarea"
-                    type="text"
-                    placeholder="Телефон"
+                    type="tel"
+                    placeholder="Обов'язково"
                     formControlName="phone"
-                    required>
+                    required
+                    autocomplete="off">
             </p>
     
             <div *ngIf="isSubmit && newUserForm.get('phone').invalid"  class="text-danger">
@@ -125,12 +131,12 @@
             <p><b>Додаткова інформація</b>
                 <textarea class="form-control" 
                         rows="5"
-                        placeholder="Додаткова інформація" 
+                        placeholder="Не обов'язково" 
                         formControlName="addItionalInfo">
                 </textarea>
             </p>
         </div>
-    
+
         <button class="btn btn-primary ml-auto d-flex jusiify-content-between mt-4 mb-5" 
                 type="submit">Підтвердити покупку</button>
     </form>

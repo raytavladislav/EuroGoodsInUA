@@ -1,3 +1,7 @@
 .viberText {
     height: 62px;
 }
+
+:host{
+    color: white;
+}

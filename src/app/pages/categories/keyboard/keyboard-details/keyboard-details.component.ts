@@ -41,6 +41,7 @@ export class KeyboardDetailsComponent implements OnInit {
       count: 1
     }
     this.basketService.setToBasket(keyboardItemProduct);
+    alert('Товар додано!');
   }
 
   private getKeyboardId(): void {

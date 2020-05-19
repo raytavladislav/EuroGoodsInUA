@@ -49,6 +49,7 @@ import { PrinterListComponent } from './pages/categories/printer/printer-list/pr
 import { ToasterListComponent } from './pages/categories/toaster/toaster-list/toaster-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserOrderComponent } from './pages/basket/user-order/user-order.component';
+import { SearchComponent } from './pages/search/search.component';
 
 
 
@@ -94,7 +95,8 @@ import { UserOrderComponent } from './pages/basket/user-order/user-order.compone
     MouseListComponent,
     PrinterListComponent,
     ToasterListComponent,
-    UserOrderComponent
+    UserOrderComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

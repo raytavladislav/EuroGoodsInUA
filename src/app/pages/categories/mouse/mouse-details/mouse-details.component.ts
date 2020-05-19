@@ -41,6 +41,7 @@ export class MouseDetailsComponent implements OnInit {
       count: 1
     }
     this.basketService.setToBasket(mouseItemProduct);
+    alert('Товар додано!');
   }
 
   private getMouseId(): void {

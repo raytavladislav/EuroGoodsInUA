@@ -2,8 +2,8 @@ import { Component, OnInit, OnDestroy, Output, EventEmitter, Input } from '@angu
 import { BasketService } from 'src/app/core/services/basket/basket.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserInterface } from 'src/app/core/interfaces/user/user.interface';
+import { ProductInterface } from 'src/app/core/interfaces';
 
 @Component({
   selector: 'app-basket',
@@ -14,6 +14,8 @@ export class BasketComponent implements OnInit, OnDestroy {
   @Input() user: UserInterface;
   @Output() newOrder = new EventEmitter<UserInterface>();
   @Output() update = new EventEmitter<UserInterface>();
+  @Output() newProductsOrder = new EventEmitter<UserInterface>();
+  @Output() updateProduct = new EventEmitter<ProductInterface>();
 
   basketList;
   product = [];
@@ -21,6 +23,7 @@ export class BasketComponent implements OnInit, OnDestroy {
   productIndex: number;
   id: number;
   userList: Array<UserInterface>;
+  productList: Array<ProductInterface>;
 
   private unsubscribe = new Subject();
 
@@ -30,9 +33,8 @@ export class BasketComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.getBasketList();
-
-    this.getOrders();
-
+    this.getOrder();
+    // this.getProductOrder();
   }
 
   ngOnDestroy() {
@@ -65,35 +67,44 @@ export class BasketComponent implements OnInit, OnDestroy {
 
   submit(user: UserInterface): void {}
 
-  getOrders(): void {
-    // this.basketService.takeUserOrder(user)
-    // .subscribe(
-    //   data => {
-    //     console.log(data);
-    //     this.userList = this.basketService.getUserOrder();
-    // });
-
-    // this.userList = this.basketService.getUserOrder();
-    this.basketService.getOrders()
-      .subscribe(data => {
-        this.userList = data;
+  getOrder(): void {
+    this.basketService.getOrder()
+      .subscribe(userData => {
+        this.userList = userData
       }),
       error => console.log(error)
   };
 
-  updateOrders(user: UserInterface): void {
-    this.basketService.updateOrders(user)
-    .subscribe(
-    //   () => {
-    //   this.getOrders();
-    // }
-    );
+  getProductOrder(): void {
+    this.basketService.getProductOrder()
+      .subscribe(products => {
+        this.product = products;
+      }),
+      error => console.log(error)
+  }
+
+  updateOrder(user: UserInterface): void {
+    this.basketService.updateOrder(user)
+    .subscribe();
+  }
+
+  updateProductsOrder(product: ProductInterface): void {
+    this.basketService.updateProductsOrder(product)
+    .subscribe();
   }
 
   addOrder(user: UserInterface): void {
     this.basketService.addOrder(user)
       .subscribe(() => {
-        this.getOrders();
+        this.getOrder();
+        // this.getProductOrder()
+      });
+  }
+
+  addProductsOrder(product: ProductInterface): void {
+    this.basketService.addProductsOrder(product)
+      .subscribe(() => {
+        this.getProductOrder();
       });
   }
 

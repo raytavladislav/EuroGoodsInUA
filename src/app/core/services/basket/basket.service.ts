@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-// import { User } from '../../interfaces/user';
 import { UserInterface } from 'src/app/core/interfaces/user/user.interface';
+import { ProductInterface } from '../../interfaces';
 
 
 @Injectable({
@@ -17,6 +17,7 @@ export class BasketService {
   product = [];
   basketService: any;
   userId: number;
+  count = 0;
 
   constructor(private http: HttpClient) {
       this.setToLocalStorage();
@@ -24,7 +25,9 @@ export class BasketService {
 
   setToBasket(product): void {
     this.setToLocalStorage(product);
-    console.log(product);
+    // console.log(product);
+    // this.count++;
+    // console.log(this.count);
   }
 
   removeFromLocalstorage(id) {
@@ -33,6 +36,12 @@ export class BasketService {
 
     basket.splice(index, 1);
     localStorage.setItem("basket", JSON.stringify(basket));
+    // if (this.count <=0) {
+    //   this.count = 0;
+    // } else {
+    //   this.count--
+    // }
+    // console.log(this.count);
   }
 
   private setToLocalStorage(product?): void {
@@ -53,15 +62,28 @@ export class BasketService {
     this.basketCount.next(basket.length);
   }
 
-  getOrders(): Observable<Array<UserInterface>> {
+  getOrder(): Observable<Array<UserInterface>> {
     return this.http.get<Array<UserInterface>>(`${this.url}/orders`);
   }
 
-  updateOrders(user: UserInterface) {
+  getProductOrder(): Observable<Array<any>> {
+    return this.http.get<Array<any>>(`${this.url}/orders`);
+  }
+
+  updateOrder(user: UserInterface) {
     return this.http.put<Array<UserInterface>>(`${this.url}/orders`, user);
+  }
+
+  updateProductsOrder(product: ProductInterface) {
+    return this.http.put<Array<ProductInterface>>(`${this.url}/orders`, product);
   }
 
   addOrder(user: UserInterface) {
     return this.http.post<Array<UserInterface>>(`${this.url}/orders`, user);
   }
+
+  addProductsOrder(product: ProductInterface) {
+    return this.http.post<Array<ProductInterface>>(`${this.url}/orders`, product);
+  }
+
 }

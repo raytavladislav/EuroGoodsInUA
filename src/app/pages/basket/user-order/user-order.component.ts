@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserInterface } from 'src/app/core/interfaces/user/user.interface';
+import { ProductInterface } from 'src/app/core/interfaces';
 
 @Component({
   selector: 'app-user-order',
@@ -9,8 +10,11 @@ import { UserInterface } from 'src/app/core/interfaces/user/user.interface';
 })
 export class UserOrderComponent implements OnInit {
   @Output() newUser = new EventEmitter<UserInterface>();
+  @Output() newProduct = new EventEmitter<ProductInterface>();
+
 
   newUserForm: FormGroup;
+  newProductForm: Array<ProductInterface>;
   isSubmit = false;
   product = [];
 
@@ -20,9 +24,7 @@ export class UserOrderComponent implements OnInit {
     this.createNewUserForm();
   }
 
-  
   onSubmit(): void {
-    console.log(this.newUserForm.value)
     this.isSubmit = true;
 
     if (this.newUserForm.invalid){
@@ -30,16 +32,20 @@ export class UserOrderComponent implements OnInit {
     }
 
     this.newUser.emit(this.newUserForm.value)
+    // this.product.emit(this.newProductForm.values)
 
     // this.submit(this.newUserForm.value);
     this.isSubmit = false;
-
     this.newUserForm.reset();
-    // localStorage.clear()
-    // this.product = []
-    
-    // ??? this.isSubmit.false
+    localStorage.clear();
+    this.product = [];
+    alert("Замовлення сформовано. Очікуйте смс з номером замовлення");
   }
+
+  // clearBasket(): void {
+  //   localStorage.clear();
+  //   this.product = [];
+  // }
 
   private createNewUserForm(): void {
     this.newUserForm = this.fb.group({
@@ -87,8 +93,14 @@ export class UserOrderComponent implements OnInit {
         ]
       ],
       addItionalInfo: ['']
-    });
+    }),
+
+    this.product = [{
+        id: '',
+        title: '',
+        price: ''
+      }
+    ]
   }
-    
 
 }

@@ -42,6 +42,7 @@ export class BlenderDetailsComponent implements OnInit, OnDestroy {
       count: 1
     }
     this.basketService.setToBasket(blenderItemProduct);
+    alert('Товар додано!');
   }
 
   private getBlenderId(): void {

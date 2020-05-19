@@ -42,6 +42,7 @@ export class ToasterDetailsComponent implements OnInit {
       count: 1
     }
     this.basketService.setToBasket(toasterItemProduct);
+    alert('Товар додано!');
   }
 
   private getToasterId(): void {

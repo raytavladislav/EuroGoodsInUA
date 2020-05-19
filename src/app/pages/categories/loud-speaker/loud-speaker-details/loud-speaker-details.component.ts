@@ -41,6 +41,7 @@ export class LoudSpeakerDetailsComponent implements OnInit {
       count: 1
     }
     this.basketService.setToBasket(loudSpeakerItemProduct);
+    alert('Товар додано!');
   }
 
   private getLoudSpeakerId(): void {

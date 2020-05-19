@@ -42,6 +42,7 @@ export class GrillDetailsComponent implements OnInit, OnDestroy {
       count: 1
     }
     this.basketService.setToBasket(grillItemProduct);
+    alert('Товар додано!');
   }
 
   private getGrillId(): void {

@@ -41,6 +41,7 @@ export class HeadphoneDetailsComponent implements OnInit {
       count: 1
     }
     this.basketService.setToBasket(headphoneItemProduct);
+    alert('Товар додано!');
   }
 
   private getHeadphoneId(): void {
