@@ -50,6 +50,7 @@ import { ToasterListComponent } from './pages/categories/toaster/toaster-list/to
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserOrderComponent } from './pages/basket/user-order/user-order.component';
 import { SearchComponent } from './pages/search/search.component';
+import { PopularProductsComponent } from './pages/products/popular-products/popular-products.component';
 
 
 
@@ -96,7 +97,8 @@ import { SearchComponent } from './pages/search/search.component';
     PrinterListComponent,
     ToasterListComponent,
     UserOrderComponent,
-    SearchComponent
+    SearchComponent,
+    PopularProductsComponent
   ],
   imports: [
     BrowserModule,
