@@ -4,29 +4,43 @@
             <div class="row">
                 <div class="col-md-3">
                     <img [src]="toaster.picture"
-                         class="card-img-top"
+                         class="card-img-top h-220"
                          alt="...">
                 </div>
+
                 <div class="col-md-8">
                     <div class="card-body row">
-                        <div class="col-6">
-                            <p class="text-success">{{(toaster.inStock) ? 'В наявності' : 'Немає в наявності'}}</p>
-                            <p style="font-size: x-large;"><b>{{toaster.price}} грн.</b></p>
-                            <button class="btn btn-primary" type="submit" (click)="setToBasket()">До корзини</button>
-                        </div>
+                    <div class="col-6 h-220">
+                        <p class="text-success">{{(toaster.inStock) ? 'В наявності' : 'Немає в наявності'}}</p>
+                        <p style="font-size: x-large;"><b>{{toaster.price}} грн.</b></p>
+                        <button class="btn btn-primary buttonAddToBasket" type="submit" (click)="setToBasket()">До корзини</button>
+                    </div>
 
-                        <div class="col-6">
-                            <h5 class="card-title">{{toaster.title}}</h5>
-                            <p class="card-text p-1">{{toaster.details}}</p>
-                        </div>
+                    <div class="col-6">
+                        <h5 class="card-title">{{toaster.title}}</h5>
+                        <p class="card-text p-1">{{toaster.details}}</p>
                     </div>
                 </div>
             </div>
-            <div class="mt-5">
-                <h3 class="ml-5 mb-3">Характеристики</h3>
-                <ul *ngFor="let item of toaster.characteristicList" style="list-style: none;">
-                    <li>{{item.lable}} {{item.value}}</li>
-                </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="mt-5 col-8">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Характеристики</th>
+                        <th scope="col"> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of toaster.characteristicList">
+                        <td>{{item.lable}}</td>
+                        <td>{{item.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

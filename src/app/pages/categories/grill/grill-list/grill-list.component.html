@@ -1,6 +1,6 @@
 <div class="container mt-5">
-    <div *ngIf="grillList" class="row row-cols-sm-2 row-cols-md-3 w-100">
-        <div class="col mb-4" *ngFor="let item of grillList">
+    <div *ngIf="grillList" class="row row-cols-sm-2 row-cols-md-4 w-100">
+        <div class="col mb-3" *ngFor="let item of grillList">
             <div class="card h-100">
                 <img src={{item.picture}}
                      class="card-img-top cardImage"
@@ -8,8 +8,8 @@
                 <div class="card-body">
                     <h5 class="card-title">{{item.title}}</h5>
                     <p class="card-text">{{item.description}}</p>
-                    <p  class="card-text">{{item.price}} грн.</p>
-                    <a  class="btn btn-primary"
+                    <p  class="card-text mb-5">{{item.price}} грн.</p>
+                    <a  class="btn btn-primary pl-3 pr-3 mb-3 buttonDetails"
                         [class.pointerIvents]="!item.inStock"
                         routerLink={{item.id}}
                         routerLinkActive="router-link-active">{{(item.inStock) ? 'Детальніше' : 'Немає в наявності'}}</a>

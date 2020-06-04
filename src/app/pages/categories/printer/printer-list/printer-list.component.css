@@ -4,5 +4,10 @@
 }
 
 .cardImage{
-    height: 200px;
+    height: 250px;
+}
+
+.buttonDetails {
+    position: absolute;
+    bottom: 0;
 }

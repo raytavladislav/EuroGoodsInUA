@@ -1,5 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler"
+<nav class="d-flex justify-content-around navbar navbar-expand-lg navbar-expand navbar-dark bg-dark">
+  <div>
+    <a routerLink="products"><img src="assets/images/logo/logo.svg" alt=""></a>
+  </div>
+
+  <div>
+    <!-- <button class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarTogglerDemo03"
@@ -7,29 +12,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- <a class="navbar-brand" href="#"></a> -->
-    <!-- <div class="dropDown">
-      <button class="mainMenuBtn">
-        <span class="material-icons localMallIcon">
-            local_mall
-        </span>
-        <b>Каталог товарів</b></button>
-      <div class="dropDownChild">
-        <a href="#">Підрозділ 1</a>
-        <a href="#">Підрозділ 2</a>
-        <a href="#">Підрозділ 4</a>
-        <a href="#">Підрозділ 5</a>
-        <a href="#">Підрозділ 6</a>
-        <a href="#">Підрозділ 7</a>
-        <a href="#">Підрозділ 8</a>
-        <a href="#">Підрозділ 9</a>
-        <a href="#">Підрозділ 10</a>
-      </div>
-    </div> -->
+    </button> -->
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      
 
       <ul class="navbar-nav mr-auto mt-2 col-md-11">
         <li ngbDropdown class="nav-item dropdown">
@@ -55,9 +40,6 @@
         </li>
 
         <li routerLinkActive="active" class="nav-item">
-          <a class="nav-link" routerLink="products">Головна</a>
-        </li>
-        <li routerLinkActive="active" class="nav-item">
           <a class="nav-link" routerLink="delivery-and-payments">Доставка</a>
         </li>
         <li routerLinkActive="active" class="nav-item">
@@ -70,16 +52,21 @@
           <a class="nav-link" routerLink="search">Пошук</a>
         </li> -->
       </ul>
+    </div>
+  </div>
+    
       <!-- <form class="form-inline my-2 my-lg-0 col-md-4">
         <input class="form-control mr-sm-2" type="search" placeholder="Пошук товарів" aria-label="Search">
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Пошук</button>
       </form> -->
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-1">
-        <li class="nav-link">
-          <a routerLink="basket" routerLinkActive="active"><span class="material-icons basket">
-            local_grocery_store
-            </span></a>
-        </li>
-      </ul>
-    </div>
+      <div>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-1">
+          <li class="nav-link">
+            <a routerLink="basket" routerLinkActive="active"><span class="material-icons basket">
+              local_grocery_store
+              </span></a>
+          </li>
+        </ul>
+      </div>
+      
   </nav>

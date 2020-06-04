@@ -1,8 +1,8 @@
-.pointerIvents {
-    pointer-events: none;
-    background-color: rgb(58, 171, 209);
+.buttonAddToBasket {
+    position: absolute;
+    bottom: 0;
 }
 
-.cardImage{
-    height: 300px;
+.h-220 {
+    height: 220px !important;
 }
